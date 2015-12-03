@@ -1,4 +1,5 @@
 test_script:
+  - ps: dir -recurse -include *.nuspec | %{Write-Host $_FullName}
   - ps: dir -recurse -include *.nuspec | %{choco pack $_FullName}
 
   - cmd: appveyor PushArtifact **\*.nupkg
