@@ -1,6 +1,7 @@
 test_script:
   - ps: dir -recurse -include *.nuspec | %{choco pack $_.FullName}
 
-  - cmd: appveyor PushArtifact '**\*.nupkg'
+artifacts:
+  - path: '**\*.nupkg' # find all NuGet packages recursively
   
 build: off
