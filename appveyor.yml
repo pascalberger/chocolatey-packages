@@ -1,0 +1,6 @@
+test_script:
+  - ps: dir -recurse -include *.nuspec | %{choco pack $_FullName}
+
+  - cmd: appveyor PushArtifact *.nupkg
+  
+build: off
