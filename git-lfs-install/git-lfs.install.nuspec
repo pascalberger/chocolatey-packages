@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>git-lfs.install</id>
+    <title>Git Large File Storage (Install)</title>
+    <version>1.1.0</version>
+    <authors>GitHub, Inc</authors>
+    <owners>IOZ AG</owners>
+    <projectUrl>https://git-lfs.github.com/</projectUrl>
+    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/git-lfs.install</packageSourceUrl>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>An open source Git extension for versioning large files</summary>
+    <description>Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.</description>
+    <tags>git lfs vcs dvcs version control</tags>
+  </metadata>
+</package>
