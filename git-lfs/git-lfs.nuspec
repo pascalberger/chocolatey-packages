@@ -4,7 +4,7 @@
     <id>git-lfs</id>
     <title>Git Large File Storage</title>
     <version>1.1.0</version>
-    <authors>GitHub, Inc</authors>
+    <authors>GitHub Inc</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://git-lfs.github.com/</projectUrl>
     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/git-lfs</packageSourceUrl>
