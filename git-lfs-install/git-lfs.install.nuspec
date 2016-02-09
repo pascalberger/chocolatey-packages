@@ -12,9 +12,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>An open source Git extension for versioning large files</summary>
     <description>Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.</description>
-    <tags>git lfs vcs dvcs version control</tags>
+    <tags>admin git lfs vcs dvcs version control</tags>
+    <releaseNotes>https://github.com/github/git-lfs/blob/master/CHANGELOG.md</releaseNotes>
     <dependencies>
-      <dependency id="git"/>
+      <dependency id="git" version="1.8.2"/>
     </dependencies>
   </metadata>
 </package>
