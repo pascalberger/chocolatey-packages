@@ -1,28 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>typescript.vs2013</id>
-        <version>1.0.0</version>
+        <version>1.7.5</version>
         <title>TypeScript.VS (Visual Studio 2013)</title>
         <authors>Microsoft</authors>
-        <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>
-        <projectUrl>http://www.typescriptlang.org/</projectUrl>
-        <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/typescript.png</iconUrl>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>http://www.typescriptlang.org</projectUrl>
+        <packageSourceUrl>https://github.com/iozag/chocolatey-packages</packageSourceUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
         TypeScript is a language for application-scale JavaScript. TypeScript adds optional types, classes, and modules to JavaScript. TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to clean, readable, standards-based JavaScript. Try it out at http://www.typescriptlang.org/playground.
-
         TypeScript for Visual Studio 2013 provides a TypeScript editor and compiler for Visual Studio 2013.
-
         Note: Adapted from TypeScript.vs for Visual Studio 2012 (https://chocolatey.org/packages/typescript.vs)
         </description>
         <summary>
         TypeScript for Visual Studio 2013 - TypeScript editor and compiler for Visual Studio 2013
-
         Note: Adapted from TypeScript.vs for Visual Studio 2012 (https://chocolatey.org/packages/typescript.vs)
         </summary>
-        <releaseNotes />
-        <copyright />
+        <releaseNotes>https://github.com/Microsoft/TypeScript/releases</releaseNotes>
         <tags>typescript visualstudio vs2013 javascript admin</tags>
     </metadata>
 </package>
