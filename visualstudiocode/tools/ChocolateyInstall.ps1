@@ -1,7 +1,7 @@
 $packageName = 'VisualStudioCode'
 $installerType = 'exe'
-$silentArgs = "/silent /log=""$env:temp\vscode.log"""
-$32BitUrl  = 'https://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCodeSetup-stable.exe'
+$silentArgs = "/silent /mergetasks=!runcode /log=""$env:temp\vscode.log"""
+$32BitUrl  = 'https://az764295.vo.msecnd.net/public/0.10.3/VSCodeSetup.exe'
 $validExitCodes = @(
     0 # success
 )
