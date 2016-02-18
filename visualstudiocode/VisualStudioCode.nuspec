@@ -7,15 +7,19 @@
     <authors>Microsoft</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://code.visualstudio.com</projectUrl>
+    <projectSourceUrl>https://github.com/Microsoft/vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/visualstudiocode</packageSourceUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/icons/vs.png</iconUrl>
     <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
+    <docsUrl>https://code.visualstudio.com/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vscode/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Code</summary>
     <description>Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.</description>
-    <tags>Microsoft Visual Studio Code editor ide</tags>
+    <tags>Microsoft Visual Studio Code editor ide admin</tags>
+    <releaseNotes>https://code.visualstudio.com/Updates</releaseNotes>
     <dependencies>
-      <dependency id="DotNet4.5.1" />
+      <dependency id="DotNet4.5.1" version="4.5.1.20131012" />
     </dependencies>
   </metadata>
 </package>
