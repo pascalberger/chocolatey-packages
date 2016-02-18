@@ -4,6 +4,7 @@
         <id>typescript.vs2013</id>
         <version>1.7.5</version>
         <title>TypeScript.VS (Visual Studio 2013)</title>
+        <owner>IOZ AG</owner>
         <authors>Microsoft</authors>
         <owners>IOZ AG</owners>
         <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
