@@ -7,7 +7,7 @@
     <authors>Microsoft</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://code.visualstudio.com</projectUrl>
-    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/VisualStudioCode</packageSourceUrl>
+    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/visualstudiocode</packageSourceUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/icons/vs.png</iconUrl>
     <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
