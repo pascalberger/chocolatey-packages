@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioCode</id>
+    <version>0.10.8</version>
+    <title>Visual Studio Code</title>
+    <authors>Microsoft</authors>
+    <owners>IOZ AG</owners>
+    <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
+    <projectUrl>https://code.visualstudio.com</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/icons/vs.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.</description>
+    <summary>Visual Studio Code</summary>
+    <tags>Microsoft Visual Studio Code editor ide</tags>
+    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/VisualStudioCode</packageSourceUrl>
+    <dependencies>
+      <dependency id="DotNet4.5.1" />
+    </dependencies>
+  </metadata>
+</package>
