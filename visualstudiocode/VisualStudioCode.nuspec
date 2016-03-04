@@ -17,7 +17,10 @@
     <summary>Visual Studio Code</summary>
     <description>Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.</description>
     <tags>Microsoft Visual Studio Code editor ide admin</tags>
-    <releaseNotes>https://code.visualstudio.com/Updates</releaseNotes>
+    <releaseNotes>
+        https://code.visualstudio.com/Updates
+        Added command line arguments. Context menu and desktop icon will be created after the installation.
+    </releaseNotes>
     <dependencies>
       <dependency id="DotNet4.5.1" version="4.5.1.20131012" />
     </dependencies>
