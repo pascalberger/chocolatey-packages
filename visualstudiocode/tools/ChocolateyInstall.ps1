@@ -1,6 +1,6 @@
 # Default values
-$createDesktopIcon = $false
-$createQuickLaunchIcon = $false
+$createDesktopIcon = $true
+$createQuickLaunchIcon = $true
 $addContextMenuFiles = $true
 $addContextMenuFolders = $true
 $addToPath = $true
