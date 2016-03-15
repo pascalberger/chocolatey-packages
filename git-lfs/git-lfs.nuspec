@@ -15,7 +15,7 @@
     <tags>git lfs vcs dvcs version control</tags>
     <releaseNotes>https://github.com/github/git-lfs/blob/master/CHANGELOG.md</releaseNotes>
     <dependencies>
-      <dependency id="git-lfs.install" />
+      <dependency id="git-lfs.install" version="1.1.2" />
     </dependencies>
   </metadata>
 </package>
