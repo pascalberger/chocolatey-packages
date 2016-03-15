@@ -3,7 +3,7 @@
   <metadata>
     <id>VisualStudioCode</id>
     <title>Visual Studio Code</title>
-    <version>0.10.10</version>
+    <version>0.10.11</version>
     <authors>Microsoft</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://code.visualstudio.com</projectUrl>
@@ -16,22 +16,22 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Code</summary>
     <description>
-    Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
+Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
 
-    ### Package Specifics
-    The package uses default install options except that it adds context menu entries and Visual Studio Code isn't started after installation.
+### Package Specifics
+The package uses default install options except that it adds context menu entries and Visual Studio Code isn't started after installation.
 
-    #### Package Parameters
-    The following package parameters can be set:
+#### Package Parameters
+The following package parameters can be set:
 
-    * `/nodesktopicon` - Don't add a desktop icon for Visual Studio Code.
-    * `/noquicklaunchicon` - Don't add an icon for Visual Studio Code to the QuickLaunch area.
-    * `/nocontextmenufiles` - Don't add an `Open with Code` entry to the context menu for files.
-    * `/nocontextmenufolders` - Dont't add an `Open with Code` entry to the context menu for folders. 
-    * `/dontaddtopath` - Don't add Visual Studio Code to the path. 
+* `/nodesktopicon` - Don't add a desktop icon for Visual Studio Code.
+* `/noquicklaunchicon` - Don't add an icon for Visual Studio Code to the QuickLaunch area.
+* `/nocontextmenufiles` - Don't add an `Open with Code` entry to the context menu for files.
+* `/nocontextmenufolders` - Dont't add an `Open with Code` entry to the context menu for folders. 
+* `/dontaddtopath` - Don't add Visual Studio Code to the path. 
 
-    These parameters can be passed to the installer with the use of `-params`.
-    For example: `-params '"/nodesktopicon /dontaddtopath"'`.
+These parameters can be passed to the installer with the use of `-params`.
+For example: `-params '"/nodesktopicon /dontaddtopath"'`.
     </description>
     <tags>Microsoft Visual Studio Code editor ide admin</tags>
     <releaseNotes>
