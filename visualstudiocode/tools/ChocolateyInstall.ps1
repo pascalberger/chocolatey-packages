@@ -26,53 +26,33 @@ if ($packageParameters)
           Throw "Package Parameters were found but were invalid (REGEX Failure)"
       }
 
-      if ($arguments.ContainsKey("desktopicon"))
+      if ($arguments.ContainsKey("nodesktopicon"))
       {
-          Write-Host "desktopicon"
-          $createDesktopIcon = $true
-      }
-      else
-      {
+          Write-Host "nodesktopicon"
           $createDesktopIcon = $false
       }
 
-      if ($arguments.ContainsKey("quicklaunchicon")) 
+      if ($arguments.ContainsKey("noquicklaunchicon")) 
       {
-          Write-Host "quicklaunchicon"
-          $createQuickLaunchIcon = $true
-      }
-      else
-      {
-          $createQuickLaunchIcon = $false    
+          Write-Host "noquicklaunchicon"
+          $createQuickLaunchIcon = $false
       }
 
-      if ($arguments.ContainsKey("addcontextmenufiles")) 
+      if ($arguments.ContainsKey("nocontextmenufiles")) 
       {
-          Write-Host "addcontextmenufiles"
-          $addContextMenuFiles = $true
-      }
-      else
-      {
+          Write-Host "nocontextmenufiles"
           $addContextMenuFiles = $false
       }
 
-      if ($arguments.ContainsKey("addcontextmenufolders")) 
+      if ($arguments.ContainsKey("nocontextmenufolders")) 
       {
-          Write-Host "addcontextmenufolders"
-          $addContextMenuFolders = $true
-      }
-      else
-      {
+          Write-Host "nocontextmenufolders"
           $addContextMenuFolders = $false
       }
       
-      if ($arguments.ContainsKey("addtopath")) 
+      if ($arguments.ContainsKey("dontaddtopath")) 
       {
-          Write-Host "addtopath"
-          $addToPath = $true
-      }
-      else
-      {
+          Write-Host "dontaddtopath"
           $addToPath = $false
       }
 }
