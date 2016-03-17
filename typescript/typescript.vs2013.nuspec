@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>typescript.vs2013</id>
-        <version>1.8.2</version>
+        <version>1.8.5</version>
         <title>TypeScript.VS (Visual Studio 2013)</title>
         <authors>Microsoft</authors>
         <owners>IOZ AG</owners>
