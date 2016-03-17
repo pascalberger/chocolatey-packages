@@ -33,7 +33,7 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/nodesktopicon /dontaddtopath"'`.
     </description>
-    <tags>Microsoft Visual Studio Code editor ide admin</tags>
+    <tags>Microsoft VisualStudioCode vscode editor ide javascript typescript admin</tags>
     <releaseNotes>
         https://code.visualstudio.com/Updates
         Added command line arguments. Context menu and desktop icon will be created after the installation.
