@@ -38,8 +38,5 @@ For example: `-params '"/nodesktopicon /dontaddtopath"'`.
         https://code.visualstudio.com/Updates
         Added command line arguments. Context menu and desktop icon will be created after the installation.
     </releaseNotes>
-    <dependencies>
-      <dependency id="DotNet4.5.1" version="4.5.1.20131012" />
-    </dependencies>
   </metadata>
 </package>
