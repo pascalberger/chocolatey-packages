@@ -3,7 +3,7 @@
   <metadata>
     <id>VisualStudioCode</id>
     <title>Visual Studio Code</title>
-    <version>0.10.11</version>
+    <version>1.0</version>
     <authors>Microsoft</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://code.visualstudio.com</projectUrl>
@@ -36,7 +36,6 @@ For example: `-params '"/nodesktopicon /dontaddtopath"'`.
     <tags>Microsoft VisualStudioCode vscode editor ide javascript typescript admin</tags>
     <releaseNotes>
         https://code.visualstudio.com/Updates
-        Added command line arguments. Context menu and desktop icon will be created after the installation.
     </releaseNotes>
   </metadata>
 </package>
