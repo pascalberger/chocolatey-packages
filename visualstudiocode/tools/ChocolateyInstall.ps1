@@ -92,7 +92,7 @@ Write-Host "$mergeTasks"
 $packageName = 'VisualStudioCode'
 $installerType = 'exe'
 $silentArgs = "/silent /mergetasks=$mergeTasks /log=""$env:temp\vscode.log"""
-$32BitUrl  = 'https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCodeSetup-stable.exe'
+$32BitUrl  = 'https://az764295.vo.msecnd.net/stable/c212f0908f3d29933317bbc3233568fbca7944b1/VSCodeSetup-stable.exe'
 $validExitCodes = @(
     0 # success
 )
