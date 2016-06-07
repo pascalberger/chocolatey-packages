@@ -1,0 +1,1 @@
+Install-ChocolateyVsixPackage 'SonarLint-2.2.1.vsix' https://visualstudiogallery.msdn.microsoft.com/47d1049d-bb27-454e-aab8-24566c85e548/file/169863/14/SonarLint-2.2.1.vsix 14
