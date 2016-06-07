@@ -9,7 +9,7 @@
     <projectUrl>https://code.visualstudio.com</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/visualstudiocode</packageSourceUrl>
-    <iconUrl>https://raw.githubusercontent.com/iozag/chocolatey-packages/master/visualstudiocode/VisualStudioCode.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/visualstudiocode/VisualStudioCode.png</iconUrl>
     <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
     <docsUrl>https://code.visualstudio.com/docs</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode/issues</bugTrackerUrl>
