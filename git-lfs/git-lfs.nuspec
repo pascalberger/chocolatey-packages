@@ -7,7 +7,7 @@
     <authors>GitHub Inc</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://git-lfs.github.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/iozag/chocolatey-packages/master/git-lfs/git-lfs.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/git-lfs/git-lfs.png</iconUrl>
     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/git-lfs</packageSourceUrl>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

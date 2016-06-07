@@ -8,7 +8,7 @@
     <owners>IOZ AG</owners>
     <licenseUrl>https://www.atlassian.com/end-user-agreement/</licenseUrl>
     <projectUrl>http://www.sourcetreeapp.com</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/iozag/chocolatey-packages/master/sourcetree/SourceTree.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/sourcetree/SourceTree.png</iconUrl>
     <packageSourceUrl>https://github.com/iozag/chocolatey-packages</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Say goodbye to the command line – use the full capability of Git and Mercurial in the SourceTree desktop app. Manage all your repositories, hosted or local, through SourceTree's simple interface.</description>
