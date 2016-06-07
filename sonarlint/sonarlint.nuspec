@@ -7,6 +7,7 @@
     <authors>SonarSource (SonarSource SA)</authors>
     <owners>IOZ AG</owners>
     <projectSourceUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp</projectSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/sonarlint/SonarLint.png</iconUrl>
     <projectUrl>http://www.sonarlint.org/visualstudio/</projectUrl>
     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/sonarlint</packageSourceUrl>
     <licenseUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp/blob/master/LICENSE</licenseUrl>
