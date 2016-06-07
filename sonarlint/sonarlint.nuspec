@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>sonarlint</id>
+    <id>sonarlint-vs2015</id>
     <title>SonarLint VSIX Extension</title>
     <version>2.2.1</version>
     <authors>SonarSource (SonarSource SA)</authors>
