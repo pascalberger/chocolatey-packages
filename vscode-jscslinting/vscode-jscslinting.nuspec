@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata>
-     <id>VSCodeJSCSLinting</id>
+     <id>vscode-jscslinting</id>
      <title>Visual Studio Code JSCS Linting Extension</title>
      <version>1.0.0</version>
      <authors>Microsoft</authors>
      <owners>IOZ AG</owners>
      <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.jscs</projectUrl>
      <projectSourceUrl>https://github.com/Microsoft/vscode-jscs</projectSourceUrl>
-     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/VSCodeJSCSLinting</packageSourceUrl>
-     <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/VSCodeJSCSLinting/VSCodeJSCSLinting.png</iconUrl>
+     <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/vscode-jscslinting</packageSourceUrl>
+     <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/vscode-jscslinting/vscode-jscslinting.png</iconUrl>
      <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.jscs/license</licenseUrl>
      <docsUrl>https://github.com/Microsoft/vscode-jscs/blob/master/README.md</docsUrl>
      <bugTrackerUrl>https://github.com/Microsoft/vscode-jscs/issues</bugTrackerUrl>

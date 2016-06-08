@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>VSCodeJSHint</id>
+    <id>vscode-jshint</id>
     <title>Visual Studio Code JSHint Extension</title>
     <version>1.0.0</version>
     <authors>Dirk Baeumer</authors>
     <owners>IOZ AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-jshint</projectSourceUrl>
-    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/VSCodeJSHint</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/VSCodeJSHint/VSCodeJSHint.png</iconUrl>
+    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/vscode-jshint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/vscode-jshint/vscode-jshint.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/dbaeumer.jshint/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-jshint/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-jshint/issues</bugTrackerUrl>
