@@ -1,1 +1,1 @@
-code --uninstall-extension dbaeumer.jshint
+code --install-extension ms-vscode.PowerShell
