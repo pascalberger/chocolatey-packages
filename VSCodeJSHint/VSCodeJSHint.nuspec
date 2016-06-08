@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VSCodeJSHint</id>
+    <title>Visual Studio Code JSHint Extension</title>
+    <version>0.10.12</version>
+    <authors>Dirk Baeumer</authors>
+    <owners>IOZ AG</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint</projectUrl>
+    <projectSourceUrl>https://github.com/Microsoft/vscode-jshint</projectSourceUrl>
+    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/VSCodeJSHint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/VSCodeJSHint/VSCodeJSHint.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/dbaeumer.jshint/license</licenseUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-jshint/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vscode-jshint/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Code JSHint Extension</summary>
+    <description>Integrates JSHint into VS Code.</description>
+    <tags>Microsoft VisualStudioCode vscode JSHint Extension</tags>
+    <releaseNotes>https://github.com/Microsoft/vscode-jshint/releases</releaseNotes>
+  </metadata>
+</package>
