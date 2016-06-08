@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata>
-     <id>VSCodePowerShell</id>
+     <id>VSCodeJSCSLinting</id>
      <title>Visual Studio Code JSCS Linting Extension</title>
      <version>1.0.0</version>
      <authors>Microsoft</authors>
