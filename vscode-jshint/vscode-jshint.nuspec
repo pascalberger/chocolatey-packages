@@ -18,5 +18,8 @@
     <description>Integrates JSHint into VS Code.</description>
     <tags>Microsoft VisualStudioCode vscode JSHint Extension</tags>
     <releaseNotes>https://github.com/Microsoft/vscode-jshint/releases</releaseNotes>
+    <dependencies>
+      <dependency id="VisualStudioCode" version="1.2.0" />
+    </dependencies>
   </metadata>
 </package>
