@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata>
-     <id>VSCodeTSLint</id>
+     <id>vscode-tslint</id>
      <title>Visual Studio Code TSLint Extension</title>
      <version>1.0.0</version>
      <authors>egamma</authors>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>VSCodePowerShell</id>
+    <id>vscode-powershell</id>
     <title>Visual Studio Code PowerShell Extension</title>
     <version>1.0.0</version>
     <authors>Microsoft</authors>
