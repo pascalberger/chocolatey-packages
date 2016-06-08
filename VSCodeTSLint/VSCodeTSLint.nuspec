@@ -4,7 +4,7 @@
      <id>VSCodeTSLint</id>
      <title>Visual Studio Code TSLint Extension</title>
      <version>0.5.28</version>
-     <authors>Microsoft</authors>
+     <authors>egamma</authors>
      <owners>IOZ AG</owners>
      <projectUrl>https://marketplace.visualstudio.com/items?itemName=eg2.tslint</projectUrl>
      <projectSourceUrl>https://github.com/Microsoft/vscode-tslint</projectSourceUrl>
