@@ -1,0 +1,1 @@
+code --uninstall-extension eg2.tslint

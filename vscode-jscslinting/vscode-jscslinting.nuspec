@@ -18,5 +18,8 @@
      <description>The JSCS Linter is a great way to learn how to create extensions for VS Code. We also love enhancements and bug fixes! To get started, clone the repo and check out the README.md for more details.</description>
      <tags>Microsoft VisualStudioCode vscode JSCS Extension</tags>
      <releaseNotes>https://github.com/Microsoft/vscode-jscs/releases</releaseNotes>
+     <dependencies>
+        <dependency id="VisualStudioCode" version="1.2.0" />
+     </dependencies>
    </metadata>
 </package>
