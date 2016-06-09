@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>productivitypowertools-vs2015</id>
+    <title>Productivity Power Tools 2015 VSIX Extension</title>
+    <version>14.0.23120.0</version>
+    <authors>Microsoft</authors>
+    <owners>IOZ AG</owners>
+    <projectSourceUrl>https://github.com/Microsoft/VS-PPT</projectSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/productivitypowertools/productivitypowertools.png</iconUrl>
+    <projectUrl>https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8914-e29c1dfa7f5d</projectUrl>
+    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/productivitypowertools</packageSourceUrl>
+    <licenseUrl>https://github.com/Microsoft/VS-PPT/blob/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A set of extensions to Visual Studio 2015 Community (and above) which improves developer productivity.</summary>
+    <description>Productivity Power Tools 2015 for Visual Studio 2015 is an extension pack that brings powerful tools for improved developer productivity.</description>
+    <tags>ProductivityPowerTools VisualStudio Productivity 2015</tags>
+    <releaseNotes>https://github.com/Microsoft/VS-PPT/releases</releaseNotes>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>
