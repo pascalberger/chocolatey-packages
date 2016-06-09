@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>coderush-vs2015</id>
-    <title>CodeRush VSIX Extension</title>
+    <title>CodeRush for Roslyn (Preview)</title>
     <version>1.0.11</version>
     <authors>DevExpress</authors>
     <owners>IOZ AG</owners>
