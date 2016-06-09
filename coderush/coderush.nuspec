@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>coderush-vs2015</id>
+    <title>CodeRush for Roslyn (Preview)</title>
+    <version>1.0.11</version>
+    <authors>DevExpress</authors>
+    <owners>IOZ AG</owners>
+    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/coderush/coderush.png</iconUrl>
+    <projectUrl>https://www.devexpress.com/products/coderush/</projectUrl>
+    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/coderush</packageSourceUrl>
+    <licenseUrl>https://www.devexpress.com/Support/EULAs/CodeRush.xml</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>DevExpress CodeRush for Roslyn Preview.</summary>
+    <description>DevExpress introduces CodeRush for Roslyn (Preview), which includes major features of CodeRush classic redesigned to exploit the new Roslyn engine in Visual Studio 2015.</description>
+    <tags>CodeRush DevExpress 2015 VisualStudio</tags>
+    <releaseNotes>https://www.devexpress.com/Support/Center/VersionHistory?TechnologyName=.NET&amp;PlatformName=IDE+Productivity+Tools&amp;ProductName=CodeRush+for+Roslyn+(Preview)&amp;VersionHistoryItemsType=&amp;StartBuildId=199d6511-e524-11e5-bf1a-e7bea2320074&amp;EndBuildId=199d6511-e524-11e5-bf1a-e7bea2320074</releaseNotes>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>
