@@ -1,0 +1,1 @@
+Install-ChocolateyVsixPackage 'DevExpress.CodeRush.Roslyn-1.0.11.vsix' https://visualstudiogallery.msdn.microsoft.com/8a8390ae-1f71-4659-9d8d-5dd56fd8a72e/file/163212/10/DevExpress.CodeRush.Roslyn-1.0.11.vsix 14
