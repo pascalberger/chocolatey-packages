@@ -31,7 +31,7 @@ The following package parameters can be set:
 * `/DontAddToPath` - Don't add Visual Studio Code to the path. 
 
 These parameters can be passed to the installer with the use of `-params`.
-For example: `-params '"/nodesktopicon /dontaddtopath"'`.
+For example: `-params '"/NoDesktopIcon /DontAddToPath"'`.
     </description>
     <tags>Microsoft VisualStudioCode vscode editor ide javascript typescript admin</tags>
     <releaseNotes>
