@@ -3,7 +3,7 @@
   <metadata>
     <id>coderush-vs2015</id>
     <title>CodeRush for Roslyn (Preview)</title>
-    <version>1.0.11</version>
+    <version>16.1.4</version>
     <authors>DevExpress</authors>
     <owners>IOZ AG</owners>
     <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/coderush/coderush.png</iconUrl>
