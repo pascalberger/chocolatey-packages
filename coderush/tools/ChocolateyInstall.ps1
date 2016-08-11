@@ -1,1 +1,1 @@
-Install-ChocolateyVsixPackage 'DevExpress.CodeRush.Roslyn-16.1.4.vsix' https://visualstudiogallery.msdn.microsoft.com/8a8390ae-1f71-4659-9d8d-5dd56fd8a72e/file/163212/11/DevExpress.CodeRush.Roslyn-16.1.4.vsix 14
+Install-ChocolateyVsixPackage 'DevExpress.CodeRush.Roslyn-16.1.5.vsix' https://visualstudiogallery.msdn.microsoft.com/8a8390ae-1f71-4659-9d8d-5dd56fd8a72e/file/163212/13/DevExpress.CodeRush.Roslyn-16.1.5.16197.vsix 14
