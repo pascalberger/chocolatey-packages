@@ -3,7 +3,7 @@
   <metadata>
     <id>coderush-vs2015</id>
     <title>CodeRush for Roslyn (Preview)</title>
-    <version>16.1.4</version>
+    <version>16.1.5</version>
     <authors>DevExpress</authors>
     <owners>IOZ AG</owners>
     <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/coderush/coderush.png</iconUrl>
@@ -14,7 +14,7 @@
     <summary>DevExpress CodeRush for Roslyn Preview.</summary>
     <description>DevExpress introduces CodeRush for Roslyn (Preview), which includes major features of CodeRush classic redesigned to exploit the new Roslyn engine in Visual Studio 2015.</description>
     <tags>CodeRush DevExpress 2015 VisualStudio</tags>
-    <releaseNotes>https://www.devexpress.com/Subscriptions/New-2016.xml#coderush</releaseNotes>
+    <releaseNotes>https://www.devexpress.com/Products/CodeRush/coderush-for-roslyn-whats-new.xml</releaseNotes>
     <dependencies>
     </dependencies>
   </metadata>
