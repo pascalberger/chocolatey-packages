@@ -3,7 +3,7 @@
   <metadata>
     <id>sonarlint-vs2015</id>
     <title>SonarLint VSIX Extension</title>
-    <version>2.4.0</version>
+    <version>2.5.0</version>
     <authors>SonarSource (SonarSource SA)</authors>
     <owners>IOZ AG</owners>
     <projectSourceUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp</projectSourceUrl>
