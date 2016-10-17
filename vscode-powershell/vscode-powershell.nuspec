@@ -5,11 +5,11 @@
     <title>Visual Studio Code PowerShell Extension</title>
     <version>1.0.0</version>
     <authors>Microsoft</authors>
-    <owners>IOZ AG</owners>
+    <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell</projectUrl>
     <projectSourceUrl>https://github.com/PowerShell/vscode-powershell</projectSourceUrl>
-    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/vscode-powershell</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/vscode-powershell/vscode-powershell.png</iconUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/vscode-powershell</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/vscode-powershell/vscode-powershell.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.PowerShell/license</licenseUrl>
     <docsUrl>https://github.com/PowerShell/vscode-powershell/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/PowerShell/vscode-powershell/issues</bugTrackerUrl>
