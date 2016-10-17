@@ -5,11 +5,11 @@
     <title>SonarLint VSIX Extension</title>
     <version>2.7.0</version>
     <authors>SonarSource (SonarSource SA)</authors>
-    <owners>IOZ AG</owners>
+    <owners>Pascal Berger</owners>
     <projectSourceUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp</projectSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/iozag/chocolatey-packages/master/sonarlint/SonarLint.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/sonarlint/SonarLint.png</iconUrl>
     <projectUrl>http://www.sonarlint.org/visualstudio/</projectUrl>
-    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/sonarlint</packageSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/sonarlint</packageSourceUrl>
     <licenseUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>SonarLint provides on-the-fly feedback to developers on new bugs and quality issues injected into C# and VB.Net code. In addition the connected mode allows to enforce governance policies by reporting the same issues in Visual Studio and in SonarQube server.</summary>

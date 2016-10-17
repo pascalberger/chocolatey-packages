@@ -5,9 +5,9 @@
     <title>Microsoft Office Developer Tools Preview 2 for Visual Studio 2015</title>
     <version>14.0.23930</version>
     <authors>Microsoft</authors>
-    <owners>IOZ AG</owners>
+    <owners>Pascal Berger</owners>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=51683</projectUrl>
-    <packageSourceUrl>https://github.com/iozag/chocolatey-packages/tree/master/officedevtools</packageSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/officedevtools</packageSourceUrl>
     <summary>This preview ships with new templates that support SharePoint 2016 for SharePoint solutions and add-ins.</summary>
     <description>Microsoft Office Developer Tools Preview 2 for Visual Studio 2015 enables you to develop SharePoint solutions and add-ins for SharePoint 2016. This preview also includes the latest features in Microsoft Office Developer Tools Update 2 for Visual Studio 2015--you can create new Office add-in projects using templates specific to an Office application (Word, Excel, Outlook, and PowerPoint). These new templates support new Office features such as add-in commands, Fabric UI, and new functionalities in Office.js. This preview must be installed on top of an earlier version of the Microsoft Office Developer Tools for Visual Studio 2015. Before installing this preview, go to aka.ms/officedevtoolsforvs2015 to get the tools.</description>
     <tags>Office Developer Tools SharePoint 2016 VisualStudio admin</tags>

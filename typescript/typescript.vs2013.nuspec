@@ -5,11 +5,11 @@
         <version>1.8.5</version>
         <title>TypeScript.VS (Visual Studio 2013)</title>
         <authors>Microsoft</authors>
-        <owners>IOZ AG</owners>
+        <owners>Pascal Berger</owners>
         <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
         <projectUrl>http://www.typescriptlang.org</projectUrl>
         <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/typescript.png</iconUrl>
-        <packageSourceUrl>https://github.com/iozag/chocolatey-packages</packageSourceUrl>
+        <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages</packageSourceUrl>
         <bugTrackerUrl>https://github.com/Microsoft/TypeScript/issues</bugTrackerUrl>
         <projectSourceUrl>https://github.com/Microsoft/TypeScript</projectSourceUrl>
         <docsUrl>http://www.typescriptlang.org/Handbook</docsUrl>
