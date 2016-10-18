@@ -1,8 +1,8 @@
 $packageName = "git-lfs"
 $installerType = "exe"
 $silentArgs = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
-$32BitUrl  = "https://github.com/github/git-lfs/releases/download/v1.4.2/git-lfs-windows-1.4.2.exe"
-$checksum = "28C1F92F6930DB4371431C62C94FA289E6E49261C53DB20CDC87B9C2D064DE90"
+$32BitUrl  = "https://github.com/github/git-lfs/releases/download/v1.4.3/git-lfs-windows-1.4.3.exe"
+$checksum = "E673C2D6528484B9021DE37B6D0958B6229E97FC2EED579DEBB86AA3D5A4CBAE"
 $checksumType = "sha256"
 $validExitCodes = @(
     0 # success
