@@ -3,7 +3,7 @@
   <metadata>
     <id>coderush-vs2015</id>
     <title>CodeRush for Roslyn</title>
-    <version>16.1.7</version>
+    <version>16.1.8</version>
     <authors>DevExpress</authors>
     <owners>Pascal Berger</owners>
     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/coderush/coderush.png</iconUrl>
