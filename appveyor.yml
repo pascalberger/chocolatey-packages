@@ -24,7 +24,7 @@ environment:
   au_push: true
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: pascalberger/chocolatey-packages
   github_api_key:
     secure: v5gsENs+xSQ0Egyee1/IQzk9rx+ZdfIRKx+WtdtFWodGyex5SueVDdLU6sEznovq #https://ci.appveyor.com/tools/encrypt
 
