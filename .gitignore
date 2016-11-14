@@ -1,5 +1,6 @@
 Update-AUPackages.md
 update_info.xml
+update_vars.ps1
 
 # Created by https://www.gitignore.io/api/windows,visualstudiocode
 
