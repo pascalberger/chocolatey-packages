@@ -5,6 +5,7 @@ $releases = 'https://visualstudiogallery.msdn.microsoft.com/47d1049d-bb27-454e-a
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
+            "(PackageName\s*=\s*)`"([^*]+)`"" = "`$1`"$($Latest.PackageName)`""
             "(VsixUrl\s*=\s*)`"([^*]+)`"" = "`$1`"$($Latest.URL32)`""
             "(Checksum\s*=\s*)`"([^*]+)`"" = "`$1`"$($Latest.Checksum)`""
         }
