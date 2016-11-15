@@ -19,4 +19,7 @@
       <dependency id="git-lfs.install" version="1.4.4" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>  
 </package>
