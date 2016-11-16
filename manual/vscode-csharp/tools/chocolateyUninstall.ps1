@@ -1,2 +1,2 @@
 Update-SessionEnvironment
-code --install-extension ms-vscode.csharp
+code --uninstall-extension ms-vscode.csharp
