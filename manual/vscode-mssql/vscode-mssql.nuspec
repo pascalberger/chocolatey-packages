@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-mssql</id>
+    <title>Visual Studio Code Microsoft SQL Server Extension</title>
+    <version>1.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Pascal Berger</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql</projectUrl>
+    <projectSourceUrl>https://github.com/Microsoft/vscode-mssql.git</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-mssql</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/vscode-mssql.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-mssql.mssql/license</licenseUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-mssql/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vscode-mssql/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Develop Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere</summary>
+    <description>Welcome to mssql for Visual Studio Code! An extension for developing Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere with a rich set of functionalities, including:
+
+* Connect to Microsoft SQL Server, Azure SQL Database and SQL Data Warehouses.
+* Create and manage connection profiles and most recently used connections.
+* Write T-SQL script with IntelliSense, T-SQL snippets, syntax colorizations, T-SQL error validations and GO batch separator.
+* Execute the script.
+* View the result in a slick grid.
+* Save the result to json or csv file format and view in the editor.
+* Customizable extension options including command shortcuts and more.
+</description>
+    <tags>Microsoft VisualStudioCode vscode mssql Extension</tags>
+    <releaseNotes>https://github.com/Microsoft/vscode-mssql/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="VisualStudioCode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+</package>
