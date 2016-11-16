@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-csharp</id>
+    <title>Visual Studio Code C# Extension</title>
+    <version>1.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Pascal Berger</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp</projectUrl>
+    <projectSourceUrl>https://github.com/OmniSharp/omnisharp-vscode</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-csharp</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/vscode-csharp.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.csharp/license</licenseUrl>
+    <docsUrl>https://code.visualstudio.com/docs/languages/csharp</docsUrl>
+    <bugTrackerUrl>https://github.com/OmniSharp/omnisharp-vscode/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>C# for Visual Studio Code (powered by OmniSharp)</summary>
+    <description>Welcome to the C# extension for Visual Studio Code! This preview provides the following features inside VS Code:
+
+* Lightweight development tools for .NET Core.
+* Great C# editing support, including Syntax Highlighting, IntelliSense, Go to Definition, Find All References, etc.
+* Debugging support for .NET Core (CoreCLR). NOTE: Mono and Desktop CLR debugging is not supported.
+* Support for project.json and csproj projects on Windows, macOS and Linux.
+
+The C# extension is powered by [OmniSharp](https://github.com/OmniSharp/omnisharp-roslyn).</description>
+    <tags>Microsoft VisualStudioCode vscode csharp omnisharp Extension</tags>
+    <releaseNotes>https://github.com/OmniSharp/omnisharp-vscode/releases</releaseNotes>
+    <dependencies>
+      <dependency id="VisualStudioCode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+</package>
