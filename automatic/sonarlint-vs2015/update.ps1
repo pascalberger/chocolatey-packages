@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://visualstudiogallery.msdn.microsoft.com/47d1049d-bb27-454e-aab8-24566c85e548'
+$releases = 'https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio'
 
 function global:au_SearchReplace {
     @{
@@ -15,20 +15,15 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    #https://visualstudiogallery.msdn.microsoft.com/47d1049d-bb27-454e-aab8-24566c85e548/file/169863/20/SonarLint.VSIX-2.8.0.214.vsix
-    $re = "SonarLint.VSIX-.+.vsix"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
-    $url = ($url -split ':/')[1]
+    $json = $download_page.AllElements | ? class -eq 'vss-extension' | select -expand innerHtml | ConvertFrom-Json | select -expand versions
+    $url = $json.files | ? source -match "\.vsix$" | select -expand source -first 1
 
-    $url32 = 'https://visualstudiogallery.msdn.microsoft.com/' + $url
-
-    $filename = $url -split '-' | select -Last 1
-    $version = [IO.Path]::GetFileNameWithoutExtension($filename)
-    $checksum = Get-RemoteChecksum $url32
+    $version = $json.version | select -first 1
+    $checksum = Get-RemoteChecksum $url
 
     @{
-        URL32     = $url32
         Version   = $version
+        URL32     = $url
         Checksum  = $checksum
     }
 }
