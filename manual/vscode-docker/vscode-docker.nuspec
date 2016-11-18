@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata>
+     <id>vscode-docker</id>
+     <title>Visual Studio Code Docker Extension</title>
+     <version>1.0.0</version>
+     <authors>Microsoft</authors>
+     <owners>Pascal Berger</owners>
+     <projectUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</projectUrl>
+     <projectSourceUrl>https://github.com/microsoft/vscode-docker</projectSourceUrl>
+     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-docker</packageSourceUrl>
+     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2486d672647c8d06684cd06c4a85255be7135bd9/icons/vscode-docker.png</iconUrl>
+     <licenseUrl>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/license</licenseUrl>
+     <docsUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</docsUrl>
+     <bugTrackerUrl>https://github.com/microsoft/vscode-docker/issues</bugTrackerUrl>
+     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+     <summary>Docker Extension for Visual Studio Code</summary>
+     <description>Adds syntax highlighting, snippets, commands and description on hover for Dockerfiles and Docker compose files.</description>
+     <tags>Microsoft VisualStudioCode vscode docker Extension</tags>
+     <dependencies>
+       <dependency id="VisualStudioCode" version="1.2.0" />
+     </dependencies>
+   </metadata>
+</package>
