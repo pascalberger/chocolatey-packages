@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata>
+     <id>vscode-autofilename</id>
+     <title>Visual Studio Code AutoFileName Extension</title>
+     <version>1.0.0</version>
+     <authors>JerryHong</authors>
+     <owners>Pascal Berger</owners>
+     <projectUrl>https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename</projectUrl>
+     <projectSourceUrl>https://github.com/Jerry-Hong/vscode-autofilename</projectSourceUrl>
+     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-autofilename</packageSourceUrl>
+     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/1750ff656020f6cb4fd067ee795ba8e54b4302ee/icons/vscode-autofilename.png</iconUrl>
+     <licenseUrl>https://github.com/Jerry-Hong/vscode-autofilename/blob/master/.LICENSE</licenseUrl>
+     <docsUrl>https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename</docsUrl>
+     <bugTrackerUrl>https://github.com/Jerry-Hong/vscode-autofilename/issues</bugTrackerUrl>
+     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+     <summary>Visual Studio Code AutoFileName Extension</summary>
+     <description>Auto completes file names in Visual Studio Code..</description>
+     <tags>Microsoft VisualStudioCode vscode Extension</tags>
+     <releaseNotes>https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename</releaseNotes>
+     <dependencies>
+       <dependency id="VisualStudioCode" version="1.2.0" />
+     </dependencies>
+   </metadata>
+</package>
