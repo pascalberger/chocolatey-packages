@@ -15,7 +15,7 @@
      <bugTrackerUrl>https://github.com/Jerry-Hong/vscode-autofilename/issues</bugTrackerUrl>
      <requireLicenseAcceptance>false</requireLicenseAcceptance>
      <summary>Visual Studio Code AutoFileName Extension</summary>
-     <description>Auto completes file names in Visual Studio Code..</description>
+     <description>Auto completes file names in Visual Studio Code.</description>
      <tags>Microsoft VisualStudioCode vscode Extension</tags>
      <releaseNotes>https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename</releaseNotes>
      <dependencies>
