@@ -8,8 +8,8 @@
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-jshint</projectSourceUrl>
-    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/vscode-jshint</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/vscode-jshint/vscode-jshint.png</iconUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-jshint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/6b37ab2513d42ec768275f2fa0abd83d5425a78f/icons/vscode-jshint/vscode-jshint.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/dbaeumer.jshint/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-jshint/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-jshint/issues</bugTrackerUrl>
