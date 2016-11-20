@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-mssql.git</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-mssql</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/vscode-mssql.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/64880d5721c5a94734151c783f832c0b11151806/icons/vscode-mssql.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-mssql.mssql/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-mssql/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-mssql/issues</bugTrackerUrl>
