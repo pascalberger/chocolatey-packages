@@ -7,7 +7,7 @@
     <authors>GitHub Inc</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://git-lfs.github.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/git-lfs.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2626ba81bea10bbeb0efdeb9d7b96f902f39650b/icons/git-lfs.png</iconUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/git-lfs-install</packageSourceUrl>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

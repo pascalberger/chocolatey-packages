@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp</projectUrl>
     <projectSourceUrl>https://github.com/OmniSharp/omnisharp-vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-csharp</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/vscode-csharp.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2ef70f9db2ed3b0e16235c9f89a2ce5d43360951/icons/vscode-csharp.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.csharp/license</licenseUrl>
     <docsUrl>https://code.visualstudio.com/docs/languages/csharp</docsUrl>
     <bugTrackerUrl>https://github.com/OmniSharp/omnisharp-vscode/issues</bugTrackerUrl>

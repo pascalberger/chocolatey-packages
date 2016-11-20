@@ -7,7 +7,7 @@
     <authors>SonarSource (SonarSource SA)</authors>
     <owners>Pascal Berger</owners>
     <projectSourceUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp</projectSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/SonarLint.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/d704881dad9f6410a39f59995ab09a756d19c9e5/icons/SonarLint.png</iconUrl>
     <projectUrl>http://www.sonarlint.org/visualstudio/</projectUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/sonarlint-vs2015</packageSourceUrl>
     <licenseUrl>https://github.com/SonarSource-VisualStudio/sonaranalyzer-csharp/blob/master/LICENSE</licenseUrl>

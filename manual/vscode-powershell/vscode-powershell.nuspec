@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell</projectUrl>
     <projectSourceUrl>https://github.com/PowerShell/vscode-powershell</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-powershell</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/master/icons/vscode-powershell.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2f8f7a947a9a481d811b39f7e73f3574bf9ea11a/icons/vscode-powershell.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.PowerShell/license</licenseUrl>
     <docsUrl>https://github.com/PowerShell/vscode-powershell/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/PowerShell/vscode-powershell/issues</bugTrackerUrl>
