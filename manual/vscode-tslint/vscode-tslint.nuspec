@@ -9,7 +9,7 @@
      <projectUrl>https://marketplace.visualstudio.com/items?itemName=eg2.tslint</projectUrl>
      <projectSourceUrl>https://github.com/Microsoft/vscode-tslint</projectSourceUrl>
      <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-tslint</packageSourceUrl>
-     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/6b37ab2513d42ec768275f2fa0abd83d5425a78f/icons/vscode-tslint/vscode-tslint.png</iconUrl>
+     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/6b37ab2513d42ec768275f2fa0abd83d5425a78f/icons/vscode-tslint.png</iconUrl>
      <licenseUrl>https://marketplace.visualstudio.com/items/eg2.tslint/license</licenseUrl>
      <docsUrl>https://github.com/Microsoft/vscode-tslint/blob/master/README.md</docsUrl>
      <bugTrackerUrl>https://github.com/Microsoft/vscode-tslint/issues</bugTrackerUrl>
