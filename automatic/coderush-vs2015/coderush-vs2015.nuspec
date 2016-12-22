@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>coderush-vs2015</id>
     <title>CodeRush for Roslyn</title>
-    <version>16.2.3</version>
+    <version>16.2.3.16357</version>
     <authors>DevExpress</authors>
     <owners>Pascal Berger</owners>
     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/8be038f3db7d5140cf5f33e058c9adaba33128c4/icons/coderush.png</iconUrl>
