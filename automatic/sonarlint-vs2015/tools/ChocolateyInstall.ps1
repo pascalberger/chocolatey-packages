@@ -1,8 +1,8 @@
-$parameters = @{
+﻿$parameters = @{
     PackageName = "sonarlint-vs2015"
-    VsixUrl = "https://visualstudiogallery.msdn.microsoft.com/47d1049d-bb27-454e-aab8-24566c85e548/file/169863/20/SonarLint.VSIX-2.8.0.214.vsix"
+    VsixUrl = "https://sonarsource.gallerycdn.vsassets.io/extensions/sonarsource/sonarlintforvisualstudio/2.9.0.355/1484298304458/169863/22/SonarLint.VSIX-2.9.0.355-2015.vsix"
     VsVersion = 14 
-    Checksum = "419DA42C9A526C35D4586343E08A2EACD76FF6CF7CD7270874A1BB4C44A6FA80"
+    Checksum = "0c2b917139d2c379cc1403a83ae271ef0275dc71822ef4a99a39d362e903285e"
     ChecksumType = "sha256"
 }
 
