@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>coderush-vs2015</id>
-    <title>CodeRush for Roslyn</title>
+    <title>CodeRush</title>
     <version>17.2.4</version>
     <authors>DevExpress</authors>
     <owners>Pascal Berger</owners>
@@ -11,8 +11,8 @@
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/coderush</packageSourceUrl>
     <licenseUrl>https://www.devexpress.com/Support/EULAs/CodeRush.xml</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>DevExpress CodeRush for Roslyn.</summary>
-    <description>DevExpress introduces CodeRush for Roslyn, which includes major features of CodeRush classic redesigned to exploit the new Roslyn engine in Visual Studio 2015.</description>
+    <summary>DevExpress CodeRush</summary>
+    <description>Powerful and quick code creation, debugging, navigation, refactoring, analysis and visualization tools that exploit the Roslyn engine in Visual Studio (2015 and up).</description>
     <tags>CodeRush DevExpress 2015 VisualStudio</tags>
     <releaseNotes>https://www.devexpress.com/Products/CodeRush/coderush-for-roslyn-whats-new.xml</releaseNotes>
     <dependencies>
