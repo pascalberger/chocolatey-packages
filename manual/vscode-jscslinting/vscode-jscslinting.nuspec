@@ -15,11 +15,18 @@
      <bugTrackerUrl>https://github.com/Microsoft/vscode-jscs/issues</bugTrackerUrl>
      <requireLicenseAcceptance>false</requireLicenseAcceptance>
      <summary>Visual Studio Code JSCS Extension</summary>
-     <description>The JSCS Linter is a great way to learn how to create extensions for VS Code. We also love enhancements and bug fixes! To get started, clone the repo and check out the README.md for more details.</description>
-     <tags>Microsoft VisualStudioCode vscode JSCS Extension</tags>
+     <description>
+[JSCS](http://jscs.info/) support for Visual Studio Code.
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+     <tags>microsoft visualstudiocode vscode extension linting javascript jscs</tags>
      <releaseNotes>https://github.com/Microsoft/vscode-jscs/releases</releaseNotes>
      <dependencies>
-        <dependency id="VisualStudioCode" version="1.2.0" />
+        <dependency id="vscode" version="1.2.0" />
      </dependencies>
    </metadata>
 </package>

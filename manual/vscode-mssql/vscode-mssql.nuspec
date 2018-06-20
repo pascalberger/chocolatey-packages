@@ -15,20 +15,27 @@
     <bugTrackerUrl>https://github.com/Microsoft/vscode-mssql/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Develop Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere</summary>
-    <description>Welcome to mssql for Visual Studio Code! An extension for developing Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere with a rich set of functionalities, including:
+    <description>
+Welcome to **mssql** for Visual Studio Code! An extension for developing Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere with a rich set of functionalities.
+
+## Features
 
 * Connect to Microsoft SQL Server, Azure SQL Database and SQL Data Warehouses.
 * Create and manage connection profiles and most recently used connections.
-* Write T-SQL script with IntelliSense, T-SQL snippets, syntax colorizations, T-SQL error validations and GO batch separator.
-* Execute the script.
-* View the result in a slick grid.
+* Write T-SQL script with IntelliSense, Go to Definition, T-SQL snippets, syntax colorizations, T-SQL error validations and ```GO``` batch separator.
+* Execute your scripts and view results in a simple to use grid.
 * Save the result to json or csv file format and view in the editor.
 * Customizable extension options including command shortcuts and more.
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
 </description>
-    <tags>Microsoft VisualStudioCode vscode mssql Extension</tags>
-    <releaseNotes>https://github.com/Microsoft/vscode-mssql/blob/master/CHANGELOG.md</releaseNotes>
+     <tags>microsoft visualstudiocode vscode extension mssql</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/ms-mssql.mssql/changelog</releaseNotes>
     <dependencies>
-      <dependency id="VisualStudioCode" version="1.2.0" />
+      <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
 </package>

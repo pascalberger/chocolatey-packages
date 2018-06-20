@@ -15,11 +15,20 @@
      <bugTrackerUrl>https://github.com/Microsoft/vscode-tslint/issues</bugTrackerUrl>
      <requireLicenseAcceptance>false</requireLicenseAcceptance>
      <summary>Visual Studio Code TSLint Extension</summary>
-     <description>Integrates tslint into VS Code.</description>
-     <tags>Microsoft VisualStudioCode vscode TSLint Extension</tags>
-     <releaseNotes>https://github.com/Microsoft/vscode-tslint/releases</releaseNotes>
+     <description>
+Integrates the [tslint](https://github.com/palantir/tslint) linter for the TypeScript language into VS Code.
+
+Please refer to the tslint [documentation](https://github.com/palantir/tslint) for how to configure the linting rules.
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+     <tags>microsoft visualstudiocode vscode extension linting typescript tslint</tags>
+     <releaseNotes>https://marketplace.visualstudio.com/items/eg2.tslint/changelog</releaseNotes>
      <dependencies>
-       <dependency id="VisualStudioCode" version="1.2.0" />
+       <dependency id="vscode" version="1.2.0" />
      </dependencies>
    </metadata>
 </package>
