@@ -15,11 +15,18 @@
      <bugTrackerUrl>https://github.com/editorconfig/editorconfig-vscode/issues</bugTrackerUrl>
      <requireLicenseAcceptance>false</requireLicenseAcceptance>
      <summary>EditorConfig Support for Visual Studio Code</summary>
-     <description>Adds EditorConfig support to Visual Studio Code.</description>
-     <tags>Microsoft VisualStudioCode vscode EditorConfig Extension</tags>
-     <releaseNotes>https://github.com/editorconfig/editorconfig-vscode/blob/master/CHANGELOG.md</releaseNotes>
+     <description>
+This plugin [attempts](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig#known-issues) to override user/workspace settings with settings found in `.editorconfig` files. No additional or vscode-specific files are required. As with any EditorConfig plugin, if `root=true` is not specified, EditorConfig [will continue to look](https://editorconfig.org/#file-location) for an `.editorconfig` file outside of the project.
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+     <tags>microsoft visualstudiocode vscode extension editorconfig</tags>
+     <releaseNotes>https://marketplace.visualstudio.com/items/EditorConfig.EditorConfig/changelog</releaseNotes>
      <dependencies>
-       <dependency id="VisualStudioCode" version="1.2.0" />
+       <dependency id="vscode" version="1.2.0" />
      </dependencies>
    </metadata>
 </package>

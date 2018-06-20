@@ -14,11 +14,28 @@
      <docsUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</docsUrl>
      <bugTrackerUrl>https://github.com/microsoft/vscode-docker/issues</bugTrackerUrl>
      <requireLicenseAcceptance>false</requireLicenseAcceptance>
-     <summary>Docker Extension for Visual Studio Code</summary>
-     <description>Adds syntax highlighting, snippets, commands and description on hover for Dockerfiles and Docker compose files.</description>
-     <tags>Microsoft VisualStudioCode vscode docker Extension</tags>
+     <summary>Docker Support for Visual Studio Code</summary>
+     <description>
+The Docker extension makes it easy to build, manage and deploy containerized applications from Visual Studio Code.
+
+## Features
+
+* Automatic `Dockerfile`, `docker-compose.yml`, and `.dockerignore` file generation (Press `F1` and search for `Docker: Add Docker files to Workspace`)
+* Syntax highlighting, hover tips, IntelliSense (completions) for `docker-compose.yml` and `Dockerfile` files
+* Linting (errors and warnings) for `Dockerfile` files
+* Command Palette (`F1`) integration for the most common Docker commands (for example `docker build`, `docker push`, etc.)
+* Explorer integration for managing Images, running Containers, and Docker Hub registries
+* Deploy images from Docker Hub and Azure Container Registries directly to Azure App Service
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+     <tags>microsoft visualstudiocode vscode extension docker</tags>
+     <releaseNotes>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/changelog</releaseNotes>
      <dependencies>
-       <dependency id="VisualStudioCode" version="1.2.0" />
+       <dependency id="vscode" version="1.2.0" />
      </dependencies>
    </metadata>
 </package>
