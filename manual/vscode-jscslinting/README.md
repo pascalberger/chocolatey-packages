@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/pascalberger/chocolatey-packages/6b37ab2513d42ec768275f2fa0abd83d5425a78f/icons/vscode-jscslinting.png" width="48" height="48"/> [vscode-jscslinting](https://chocolatey.org/packages/vscode-jscslinting)
+# <img src="https://cdn.rawgit.com/pascalberger/chocolatey-packages/3ed1399ef70d091e9e7cc2129c694ba1abbb37cf/icons/vscode-jscslinting.png" width="48" height="48"/> [vscode-jscslinting](https://chocolatey.org/packages/vscode-jscslinting)
 
 [JSCS](http://jscs.info/) support for Visual Studio Code.
 
