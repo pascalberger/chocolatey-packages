@@ -37,11 +37,14 @@ that Visual Studio Code provides.
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-     <tags>microsoft visualstudiocode vscode extension powershell</tags>
+    </description>
+    <tags>microsoft visualstudiocode vscode extension powershell</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.PowerShell/changelog</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

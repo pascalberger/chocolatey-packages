@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
- <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-   <metadata>
-     <id>vscode-docker</id>
-     <title>Visual Studio Code Docker Extension</title>
-     <version>1.0.0.20180620</version>
-     <authors>Microsoft</authors>
-     <owners>Pascal Berger</owners>
-     <projectUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</projectUrl>
-     <projectSourceUrl>https://github.com/microsoft/vscode-docker</projectSourceUrl>
-     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-docker</packageSourceUrl>
-     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2486d672647c8d06684cd06c4a85255be7135bd9/icons/vscode-docker.png</iconUrl>
-     <licenseUrl>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/license</licenseUrl>
-     <docsUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</docsUrl>
-     <bugTrackerUrl>https://github.com/microsoft/vscode-docker/issues</bugTrackerUrl>
-     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-     <summary>Docker Support for Visual Studio Code</summary>
-     <description>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-docker</id>
+    <title>Visual Studio Code Docker Extension</title>
+    <version>1.0.0.20180620</version>
+    <authors>Microsoft</authors>
+    <owners>Pascal Berger</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</projectUrl>
+    <projectSourceUrl>https://github.com/microsoft/vscode-docker</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-docker</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2486d672647c8d06684cd06c4a85255be7135bd9/icons/vscode-docker.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/license</licenseUrl>
+    <docsUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</docsUrl>
+    <bugTrackerUrl>https://github.com/microsoft/vscode-docker/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Docker Support for Visual Studio Code</summary>
+    <description>
 The Docker extension makes it easy to build, manage and deploy containerized applications from Visual Studio Code.
 
 ## Features
@@ -31,11 +31,14 @@ The Docker extension makes it easy to build, manage and deploy containerized app
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-     <tags>microsoft visualstudiocode vscode extension docker</tags>
-     <releaseNotes>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/changelog</releaseNotes>
-     <dependencies>
-       <dependency id="vscode" version="1.2.0" />
-     </dependencies>
-   </metadata>
+    </description>
+    <tags>microsoft visualstudiocode vscode extension docker</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="vscode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

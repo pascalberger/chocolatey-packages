@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
- <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-   <metadata>
-     <id>vscode-editorconfig</id>
-     <title>Visual Studio Code EditorConfig Extension</title>
-     <version>1.0.0.20180620</version>
-     <authors>EditorConfig</authors>
-     <owners>Pascal Berger</owners>
-     <projectUrl>https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig</projectUrl>
-     <projectSourceUrl>https://github.com/editorconfig/editorconfig-vscode</projectSourceUrl>
-     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-editorconfig</packageSourceUrl>
-     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/885495fc3e3a6450c6173d2d654f3baf351f7388/icons/vscode-editorconfig.png</iconUrl>
-     <licenseUrl>https://github.com/editorconfig/editorconfig-vscode/blob/master/LICENSE.md</licenseUrl>
-     <docsUrl>https://github.com/editorconfig/editorconfig-vscode/blob/master/README.md</docsUrl>
-     <bugTrackerUrl>https://github.com/editorconfig/editorconfig-vscode/issues</bugTrackerUrl>
-     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-     <summary>EditorConfig Support for Visual Studio Code</summary>
-     <description>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-editorconfig</id>
+    <title>Visual Studio Code EditorConfig Extension</title>
+    <version>1.0.0.20180620</version>
+    <authors>EditorConfig</authors>
+    <owners>Pascal Berger</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig</projectUrl>
+    <projectSourceUrl>https://github.com/editorconfig/editorconfig-vscode</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-editorconfig</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/885495fc3e3a6450c6173d2d654f3baf351f7388/icons/vscode-editorconfig.png</iconUrl>
+    <licenseUrl>https://github.com/editorconfig/editorconfig-vscode/blob/master/LICENSE.md</licenseUrl>
+    <docsUrl>https://github.com/editorconfig/editorconfig-vscode/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/editorconfig/editorconfig-vscode/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>EditorConfig Support for Visual Studio Code</summary>
+    <description>
 This plugin [attempts](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig#known-issues) to override user/workspace settings with settings found in `.editorconfig` files. No additional or vscode-specific files are required. As with any EditorConfig plugin, if `root=true` is not specified, EditorConfig [will continue to look](https://editorconfig.org/#file-location) for an `.editorconfig` file outside of the project.
 
 ## Notes
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-     <tags>microsoft visualstudiocode vscode extension editorconfig</tags>
-     <releaseNotes>https://marketplace.visualstudio.com/items/EditorConfig.EditorConfig/changelog</releaseNotes>
-     <dependencies>
-       <dependency id="vscode" version="1.2.0" />
-     </dependencies>
-   </metadata>
+    </description>
+    <tags>microsoft visualstudiocode vscode extension editorconfig</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/EditorConfig.EditorConfig/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="vscode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

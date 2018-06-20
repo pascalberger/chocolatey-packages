@@ -1,32 +1,35 @@
 <?xml version="1.0"?>
- <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-   <metadata>
-     <id>vscode-jscslinting</id>
-     <title>Visual Studio Code JSCS Linting Extension</title>
-     <version>1.0.0.20180620</version>
-     <authors>Microsoft</authors>
-     <owners>Pascal Berger</owners>
-     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.jscs</projectUrl>
-     <projectSourceUrl>https://github.com/Microsoft/vscode-jscs</projectSourceUrl>
-     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-jscslinting</packageSourceUrl>
-     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/3ed1399ef70d091e9e7cc2129c694ba1abbb37cf/icons/vscode-jscslinting.png</iconUrl>
-     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.jscs/license</licenseUrl>
-     <docsUrl>https://github.com/Microsoft/vscode-jscs/blob/master/README.md</docsUrl>
-     <bugTrackerUrl>https://github.com/Microsoft/vscode-jscs/issues</bugTrackerUrl>
-     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-     <summary>Visual Studio Code JSCS Extension</summary>
-     <description>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-jscslinting</id>
+    <title>Visual Studio Code JSCS Linting Extension</title>
+    <version>1.0.0.20180620</version>
+    <authors>Microsoft</authors>
+    <owners>Pascal Berger</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.jscs</projectUrl>
+    <projectSourceUrl>https://github.com/Microsoft/vscode-jscs</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-jscslinting</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/3ed1399ef70d091e9e7cc2129c694ba1abbb37cf/icons/vscode-jscslinting.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.jscs/license</licenseUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-jscs/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vscode-jscs/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Code JSCS Extension</summary>
+    <description>
 [JSCS](http://jscs.info/) support for Visual Studio Code.
 
 ## Notes
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-     <tags>microsoft visualstudiocode vscode extension linting javascript jscs</tags>
-     <releaseNotes>https://github.com/Microsoft/vscode-jscs/releases</releaseNotes>
-     <dependencies>
-        <dependency id="vscode" version="1.2.0" />
-     </dependencies>
-   </metadata>
+    </description>
+    <tags>microsoft visualstudiocode vscode extension linting javascript jscs</tags>
+    <releaseNotes>https://github.com/Microsoft/vscode-jscs/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vscode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

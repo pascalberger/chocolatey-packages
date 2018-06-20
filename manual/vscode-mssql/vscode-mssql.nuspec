@@ -31,11 +31,14 @@ Welcome to **mssql** for Visual Studio Code! An extension for developing Microso
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-     <tags>microsoft visualstudiocode vscode extension mssql</tags>
+    </description>
+    <tags>microsoft visualstudiocode vscode extension mssql</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-mssql.mssql/changelog</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
