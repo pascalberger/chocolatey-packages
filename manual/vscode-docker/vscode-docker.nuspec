@@ -3,7 +3,7 @@
    <metadata>
      <id>vscode-docker</id>
      <title>Visual Studio Code Docker Extension</title>
-     <version>1.0.0</version>
+     <version>1.0.0.20180620</version>
      <authors>Microsoft</authors>
      <owners>Pascal Berger</owners>
      <projectUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</projectUrl>
