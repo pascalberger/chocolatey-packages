@@ -31,11 +31,14 @@ This extension provides the following features inside VS Code:
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
+    </description>
     <tags>microsoft visualstudiocode vscode extension csharp omnisharp</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.csharp/changelog</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

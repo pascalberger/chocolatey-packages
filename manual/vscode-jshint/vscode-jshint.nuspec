@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-jshint</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-jshint</packageSourceUrl>
-     <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/5138d1894f14688f6a985d4c4a6fe79abc24b5e5/icons/vscode-jshint.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/5138d1894f14688f6a985d4c4a6fe79abc24b5e5/icons/vscode-jshint.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/dbaeumer.jshint/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-jshint/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-jshint/issues</bugTrackerUrl>
@@ -22,11 +22,14 @@ Integrates [JSHint](http://jshint.com/) into VS Code.
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-     <tags>microsoft visualstudiocode vscode extension linting javascript jshint</tags>
+    </description>
+    <tags>microsoft visualstudiocode vscode extension linting javascript jshint</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/dbaeumer.jshint/changelog</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
