@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-editorconfig</id>
     <title>Visual Studio Code EditorConfig Extension</title>
-    <version>1.0.0.20180620</version>
+    <version>1.0.0.20181011</version>
     <authors>EditorConfig</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig</projectUrl>
     <projectSourceUrl>https://github.com/editorconfig/editorconfig-vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-editorconfig</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/885495fc3e3a6450c6173d2d654f3baf351f7388/icons/vscode-editorconfig.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@885495fc3e3a6450c6173d2d654f3baf351f7388/icons/vscode-editorconfig.png</iconUrl>
     <licenseUrl>https://github.com/editorconfig/editorconfig-vscode/blob/master/LICENSE.md</licenseUrl>
     <docsUrl>https://github.com/editorconfig/editorconfig-vscode/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/editorconfig/editorconfig-vscode/issues</bugTrackerUrl>

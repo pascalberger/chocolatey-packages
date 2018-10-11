@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-jscslinting</id>
     <title>Visual Studio Code JSCS Linting Extension</title>
-    <version>1.0.0.20180620</version>
+    <version>1.0.0.20181011</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.jscs</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-jscs</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-jscslinting</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/3ed1399ef70d091e9e7cc2129c694ba1abbb37cf/icons/vscode-jscslinting.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@3ed1399ef70d091e9e7cc2129c694ba1abbb37cf/icons/vscode-jscslinting.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.jscs/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-jscs/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-jscs/issues</bugTrackerUrl>

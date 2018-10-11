@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-csharp</id>
     <title>Visual Studio Code C# Extension</title>
-    <version>1.0.0.20180620</version>
+    <version>1.0.0.20181011</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp</projectUrl>
     <projectSourceUrl>https://github.com/OmniSharp/omnisharp-vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-csharp</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/2ef70f9db2ed3b0e16235c9f89a2ce5d43360951/icons/vscode-csharp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@2ef70f9db2ed3b0e16235c9f89a2ce5d43360951/icons/vscode-csharp.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.csharp/license</licenseUrl>
     <docsUrl>https://code.visualstudio.com/docs/languages/csharp</docsUrl>
     <bugTrackerUrl>https://github.com/OmniSharp/omnisharp-vscode/issues</bugTrackerUrl>

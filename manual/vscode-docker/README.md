@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/pascalberger/chocolatey-packages/2486d672647c8d06684cd06c4a85255be7135bd9/icons/vscode-docker.png" width="48" height="48"/> [vscode-docker](https://chocolatey.org/packages/vscode-docker)
+# <img src="https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@2486d672647c8d06684cd06c4a85255be7135bd9/icons/vscode-docker.png" width="48" height="48"/> [vscode-docker](https://chocolatey.org/packages/vscode-docker)
 
 The Docker extension makes it easy to build, manage and deploy containerized applications from Visual Studio Code.
 

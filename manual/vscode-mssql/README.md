@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/pascalberger/chocolatey-packages/64880d5721c5a94734151c783f832c0b11151806/icons/vscode-mssql.png" width="48" height="48"/> [vscode-msqql](https://chocolatey.org/packages/vscode-msqql)
+# <img src="https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@64880d5721c5a94734151c783f832c0b11151806/icons/vscode-mssql.png" width="48" height="48"/> [vscode-msqql](https://chocolatey.org/packages/vscode-msqql)
 
 Welcome to **mssql** for Visual Studio Code! An extension for developing Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere with a rich set of functionalities.
 
