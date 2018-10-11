@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/pascalberger/chocolatey-packages/2f8f7a947a9a481d811b39f7e73f3574bf9ea11a/icons/vscode-powershell.png" width="48" height="48"/> [vscode-powershell](https://chocolatey.org/packages/vscode-powershell)
+# <img src="https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@2f8f7a947a9a481d811b39f7e73f3574bf9ea11a/icons/vscode-powershell.png" width="48" height="48"/> [vscode-powershell](https://chocolatey.org/packages/vscode-powershell)
 
 This extension provides rich PowerShell language support for [Visual Studio Code](https://github.com/Microsoft/vscode).
 Now you can write and debug PowerShell scripts using the excellent IDE-like interface

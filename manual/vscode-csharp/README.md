@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/pascalberger/chocolatey-packages/2ef70f9db2ed3b0e16235c9f89a2ce5d43360951/icons/vscode-csharp.png" width="48" height="48"/> [vscode-csharp](https://chocolatey.org/packages/vscode-csharp)
+# <img src="https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@2ef70f9db2ed3b0e16235c9f89a2ce5d43360951/icons/vscode-csharp.png" width="48" height="48"/> [vscode-csharp](https://chocolatey.org/packages/vscode-csharp)
 
 C# for Visual Studio Code (powered by OmniSharp)
 

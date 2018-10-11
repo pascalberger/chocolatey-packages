@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-autofilename</id>
     <title>Visual Studio Code AutoFileName Extension</title>
-    <version>1.0.0.20180620</version>
+    <version>1.0.0.20181011</version>
     <authors>JerryHong</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename</projectUrl>
     <projectSourceUrl>https://github.com/Jerry-Hong/vscode-autofilename</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-autofilename</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/1750ff656020f6cb4fd067ee795ba8e54b4302ee/icons/vscode-autofilename.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@1750ff656020f6cb4fd067ee795ba8e54b4302ee/icons/vscode-autofilename.png</iconUrl>
     <licenseUrl>https://github.com/Jerry-Hong/vscode-autofilename/blob/master/.LICENSE</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename</docsUrl>
     <bugTrackerUrl>https://github.com/Jerry-Hong/vscode-autofilename/issues</bugTrackerUrl>

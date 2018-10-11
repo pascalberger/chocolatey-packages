@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>typescript.vs2013</id>
-        <version>1.8.5</version>
+        <version>1.8.5.20181011</version>
         <title>TypeScript.VS (Visual Studio 2013)</title>
         <authors>Microsoft</authors>
         <owners>Pascal Berger</owners>
         <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
         <projectUrl>http://www.typescriptlang.org</projectUrl>
-        <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/83c45e0ba356634968214da1baa22a2a92e7de36/icons/typescript.png</iconUrl>
+        <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@83c45e0ba356634968214da1baa22a2a92e7de36/icons/typescript.png</iconUrl>
         <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/typescript</packageSourceUrl>
         <bugTrackerUrl>https://github.com/Microsoft/TypeScript/issues</bugTrackerUrl>
         <projectSourceUrl>https://github.com/Microsoft/TypeScript</projectSourceUrl>

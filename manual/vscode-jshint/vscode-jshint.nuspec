@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-jshint</id>
     <title>Visual Studio Code JSHint Extension</title>
-    <version>1.0.0.20180620</version>
+    <version>1.0.0.20181011</version>
     <authors>Dirk Baeumer</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-jshint</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-jshint</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/pascalberger/chocolatey-packages/5138d1894f14688f6a985d4c4a6fe79abc24b5e5/icons/vscode-jshint.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@5138d1894f14688f6a985d4c4a6fe79abc24b5e5/icons/vscode-jshint.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/dbaeumer.jshint/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-jshint/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-jshint/issues</bugTrackerUrl>
