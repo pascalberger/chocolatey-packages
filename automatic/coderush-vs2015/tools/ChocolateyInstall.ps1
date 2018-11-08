@@ -1,8 +1,8 @@
 ﻿$parameters = @{
     PackageName = "coderush-vs2015"
-    VsixUrl = "https://devexpress.gallerycdn.vsassets.io/extensions/devexpress/coderushforroslyn/18.1.13/1539850307565/DevExpress.CodeRush.Roslyn-18.1.13.vsix"
+    VsixUrl = "https://devexpress.gallerycdn.vsassets.io/extensions/devexpress/coderushforroslyn/18.2.3/1541687433816/DevExpress.CodeRush.Roslyn-18.2.3.vsix"
     VsVersion = 14 
-    Checksum = "f3e5d67c906f2d663cdcb7065d2855bd3d230935bce0371d04ae34d6ebc33757"
+    Checksum = "611495bdfc8f684071d7c763756c2d6cf9f4837e0f20d8ef6e260771aa6fea8c"
     ChecksumType = "sha256"
 }
 
