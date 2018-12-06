@@ -3,7 +3,7 @@
   <metadata>
     <id>coderush-vs2015</id>
     <title>CodeRush</title>
-    <version>18.2.3</version>
+    <version>18.2.4</version>
     <authors>DevExpress</authors>
     <owners>Pascal Berger</owners>
     <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@8be038f3db7d5140cf5f33e058c9adaba33128c4/icons/coderush.png</iconUrl>
