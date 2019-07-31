@@ -4,7 +4,7 @@
     <id>vscode-tslint</id>
     <title>Visual Studio Code TSLint Extension</title>
     <version>1.0.0.20190730</version>
-    <authors>egamma</authors>
+    <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-typescript-tslint-plugin</projectSourceUrl>
