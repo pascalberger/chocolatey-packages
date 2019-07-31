@@ -8,3 +8,4 @@ Please refer to the tslint [documentation](https://github.com/palantir/tslint) f
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
+* If the [deprecated TSLint extension](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) is installed it will be uninstalled to avoid linting files twice.
