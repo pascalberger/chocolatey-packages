@@ -1,2 +1,2 @@
 Update-SessionEnvironment
-code --uninstall-extension eg2.tslint
+code --uninstall-extension ms-vscode.vscode-typescript-tslint-plugin
