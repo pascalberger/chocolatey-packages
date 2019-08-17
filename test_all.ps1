@@ -22,6 +22,7 @@ if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
 $options = [ordered]@{
     Force   = $true
     Push    = $false
+    UpdateTimeout = 3600                               #Update timeout in seconds
     Threads = 10
 
     IgnoreOn = @(                                      #Error message parts to set the package ignore status
@@ -71,6 +72,7 @@ $options = [ordered]@{
     BeforeEach  = {
       param($PackageName, $Options )
       $Options.ModulePaths | ForEach-Object { Import-Module $_ }
+      $global:au_Force = $true # Some of the helper scripts rely on this one
   }
 }
 
@@ -79,10 +81,11 @@ $options = [ordered]@{
   [System.Net.SecurityProtocolType]::Tls -bor
   [System.Net.SecurityProtocolType]::Ssl3
 
-$global:info = updateall -Name $Name -Options $Options
+$global:info = Update-AuPackages -Name $Name -Options $Options
 
 $au_errors = $global:info | Where-Object { $_.Error } | Select-Object -ExpandProperty Error
 
 if ($ThrowOnErrors -and $au_errors.Count -gt 0) {
+    WriteOutput "Test failed with message: $au_errors" -type Error
     throw 'Errors during update'
 }

@@ -64,11 +64,11 @@ function CheckPackageSizes() {
 
   $nupkgFiles | ForEach-Object {
     $size = $_.Length
-    $maxSize = 300MB
+    $maxSize = 200MB
     $packageName = $_.Directory.Name
     if ($size -gt $maxSize) {
       $friendlySize = $size / 1024 / 1024
-      WriteOutput -type Error "The package $packageName is too large. Maximum allowed size is 300 MB. Actual size was $friendlySize MB!"
+      WriteOutput -type Error "The package $packageName is too large. Maximum allowed size is $($maxSize / 1024 / 1024) MB. Actual size was $friendlySize MB!"
       SetAppveyorExitCode -ExitCode 2
     } else {
       $index = 0
@@ -98,7 +98,7 @@ function CreateSnapshotArchive() {
     'a'
     '-mx9'
     "`"$artifactsDirectory\install_snapshot.7z`""
-  ) + $directories
+  ) + ($directories | Select-Object -Unique)
 
   . 7z $arguments
 }
@@ -327,12 +327,15 @@ function SetAppveyorExitCode() {
   )
   WriteOutput "Exit code was $ExitCode" -type Warning
 
-  if (!(Test-Path env:\APPVEYOR)) {
+  if ($ExitCode -eq 0) {
     return
   }
-  if ($ExitCode -ne 0) {
+
+  if ((Test-Path env:\APPVEYOR)) {
     $host.SetShouldExit($ExitCode)
   }
+
+  return
 }
 
 function RunChocoProcess() {
@@ -357,14 +360,15 @@ function RunChocoProcess() {
   $args = @($arguments) + @(
     '--yes'
     "--execution-timeout=$timeout"
+    "--ignorepackagecodes"
   )
   if ($arguments[0] -eq 'uninstall') {
     $args += @(
       '--all-versions'
       '--autouninstaller'
       '--fail-on-autouninstaller'
-      '--force'
-    )
+      #'--force'
+      )
   }
   $packFailed = $false
   $errorFilePath = "$screenShotDir\$($arguments[0])Error_$($arguments[1]).jpg"
@@ -373,16 +377,16 @@ function RunChocoProcess() {
   $packageName = $arguments[1] -split ' ' | Select-Object -first 1
   $pkgDir = Get-ChildItem -Path "$PSScriptRoot\.." -Filter "$packageName" -Recurse -Directory | Select-Object -first 1
 
-  try {
-    RunChocoPackProcess '' | WriteChocoOutput
+  $nupkgFile = Get-ChildItem -Path $pkgDir.FullName -Filter "*.nupkg" | Select-Object -first 1
+  $pkgNameVersion = Split-Path -Leaf $nupkgFile | ForEach-Object { ($_ -replace '((\.\d+)+(-[^-\.]+)?).nupkg', ':$1').Replace(':.', ':') -split ':' }
+  $packageName = $pkgNameVersion | Select-Object -first 1
+  $version     = $pkgNameVersion | Select-Object -last 1
+  if ($packageName -ne $arguments[1]) { $args[1] = $packageName }
 
-    $nupkgFile = Get-ChildItem -Path $pkgDir.FullName -Filter "*.nupkg" | Select-Object -first 1
-    $pkgNameVersion = Split-Path -Leaf $nupkgFile | ForEach-Object { ($_ -replace '((\.\d+)+(-[^-\.]+)?).nupkg', ':$1').Replace(':.', ':') -split ':' }
-    $packageName = $pkgNameVersion | Select-Object -first 1
-    $version     = $pkgNameVersion | Select-Object -last 1
-    if ($packageName -ne $arguments[1]) { $args[1] = $packageName }
+  try {
+      RunChocoPackProcess '' | WriteChocoOutput
   
-    if ($arguments[0] -eq 'install') {
+      if ($arguments[0] -eq 'install') {
       if ($version) {
         $args += @("--version=$($version)")
         if ($version -match '\-') {
