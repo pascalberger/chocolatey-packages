@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>azuredatastudio-powershell</id>
+    <title>Azure Data Studio PowerShell Extension</title>
+    <version>1.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Pascal Berger</owners>
+    <projectUrl>https://docs.microsoft.com/en-us/sql/azure-data-studio/powershell-extension</projectUrl>
+    <projectSourceUrl>https://github.com/PowerShell/vscode-powershell</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/azuredatastudio-powershell</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@baa661297ee231fe4a7f24089c594499babffd12/icons/azuredatastudio-powershell.png</iconUrl>
+    <licenseUrl>https://github.com/PowerShell/vscode-powershell/blob/master/LICENSE.txt</licenseUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/sql/azure-data-studio/powershell-extension</docsUrl>
+    <bugTrackerUrl>https://github.com/PowerShell/vscode-powershell/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>PowerShell Editor Support for Azure Data Studio</summary>
+    <description><![CDATA[This extension provides rich PowerShell editor support in [Azure Data Studio](https://github.com/Microsoft/azuredatastudio).
+Now you can write and debug PowerShell scripts using the excellent IDE-like interface that Azure Data Studio provides.
+
+## Features
+
+* Syntax highlighting
+* Code snippets
+* IntelliSense for cmdlets and more
+* Rule-based analysis provided by [PowerShell Script Analyzer](http://github.com/PowerShell/PSScriptAnalyzer)
+* Go to Definition of cmdlets and variables
+* Find References of cmdlets and variables
+* Document and workspace symbol discovery
+* Run selected selection of PowerShell code using `F8`
+* Launch online help for the symbol under the cursor using `Ctrl`+`F1`
+* Basic interactive console support!
+
+## Notes
+
+* This package requires Azure Data Studio 1.5.1 or newer.
+  You can install it with the [azure-data-studio](https://chocolatey.org/packages/azure-data-studio) package.
+* The extension will be installed in any edition of Azure Data Studio which could be found.
+
+![screenshot](https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@baa661297ee231fe4a7f24089c594499babffd12/automatic/azuredatastudio-powershell/screenshot.png)
+]]></description>
+    <tags>microsoft azure-data-studio extension powershell</tags>
+    <releaseNotes>https://github.com/PowerShell/vscode-powershell/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-azuredatastudio.extension" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
