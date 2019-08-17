@@ -40,7 +40,7 @@ Now you can write and debug PowerShell scripts using the excellent IDE-like inte
     <tags>microsoft visualstudiocode vscode extension powershell</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.PowerShell/changelog</releaseNotes>
     <dependencies>
-      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>
