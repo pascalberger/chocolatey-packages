@@ -90,11 +90,28 @@ param(
   [string]$GithubRepository = "pascalberger/chocolatey-packages",
   [string]$RelativeIconDir = "../icons",
   [string]$PackagesDirectory = "../automatic",
+  [ValidateSet('jsdelivr', 'staticaly','githack')]
+  [string]$template = 'jsdelivr',
   [switch]$UseStopwatch,
   [switch]$Quiet,
   [switch]$ThrowErrorOnIconNotFound,
   [switch]$Optimize
 )
+
+if (!$GithubRepository) {
+  $allRemotes = . git remote
+  $remoteName = if ($allRemotes | Where-Object { $_ -eq 'upstream' }) { "upstream" }
+                elseif ($allRemotes | Where-Object { $_ -eq 'origin' }) { 'origin' }
+                else { $allRemotes | Select-Object -first 1 }
+
+  if ($remoteName) { $remoteUrl = . git remote get-url $remoteName }
+
+  if ($remoteUrl) {
+    $GithubRepository = ($remoteUrl -split '\/' | Select-Object -last 2) -replace '\.git$','' -join '/'
+  } else {
+    $GithubRepository = "USERNAME/REPOSITORY-NAME"
+  }
+}
 
 $counts = @{
   replaced = 0
@@ -186,14 +203,15 @@ function Test-Icon{
     [string]$Name,
     [string]$Extension,
     [string]$IconDir,
-    [bool]$Optimize
+    [bool]$Optimize,
+    [string]$PackageName = $Name
   )
   $path = "$IconDir/$Name.$Extension"
   if (!(Test-Path $path)) { return $false; }
   if ($Optimize) { Optimize-Image $path }
   if ((git status "$path" -s)) {
     git add $path | Out-Null;
-    $message = "($Name) Updated icon"
+    $message = "($PackageName) Updated icon"
     if ((git log --oneline -1) -match "$([regex]::Escape($message))$") {
       git commit --amend -m "$message" "$path" | Out-Null
     } else {
@@ -227,14 +245,20 @@ function Replace-IconUrl{
     [string]$NuspecPath,
     [string]$CommitHash,
     [string]$IconPath,
-    [string]$GithubRepository
+    [string]$GithubRepository,
+    [switch]$NoReadme
   )
 
   $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
 
   $oldContent = ($nuspec | Out-String) -replace '\r\n?',"`n"
 
-  $url = "https://cdn.jsdelivr.net/gh/$GithubRepository@$CommitHash/$iconPath"
+  $url = switch ($template) {
+    'jsdelivr' { "https://cdn.jsdelivr.net/gh/${GithubRepository}@${CommitHash}/$iconPath" }
+    'staticaly' { "https://cdn.staticaly.com/gh/${GithubRepository}/${CommitHash}/$iconPath" }
+    'githack' { "https://rawcdn.githack.com/${GithubRepository}/${CommitHash}/$iconPath" }
+    Default { throw "$template is unsupported" }
+  }
 
   $nuspec = $nuspec -replace '<iconUrl>.*',"<iconUrl>$url</iconUrl>"
 
@@ -244,8 +268,11 @@ function Replace-IconUrl{
     return;
   }
   [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
-  $readMePath = (Split-Path -Parent $NuspecPath) + "\Readme.md"
-  Update-Readme -ReadmePath $readMePath -Url $url
+
+  if (!($NoReadme)) {
+    $readMePath = (Split-Path -Parent $NuspecPath) + "\Readme.md"
+    Update-Readme -ReadmePath $readMePath -Url $url
+  }
   $counts.replaced++;
 }
 
@@ -260,14 +287,10 @@ function Update-IconUrl{
   )
 
   $possibleNames = @($Name);
-  if ($IconName) { $possibleNames = @($IconName) + $possibleNames }
 
-  $validSuffixes = @(".install"; ".portable"; ".commandline")
-
-  $suffixMatch = $validSuffixes | Where-Object { $Name.EndsWith($_) } | Select-Object -first 1
-
-  if ($suffixMatch) {
-    $possibleNames += $Name.Substring(0, $Name.Length - $suffixMatch.Length)
+  $dotIndex = $Name.IndexOf('.')
+  if ($dotIndex -gt 0) {
+    $possibleNames += $Name.Remove($dotIndex)
   }
 
   # Let check if the package already contains a url, and get the filename from that
@@ -286,7 +309,7 @@ function Update-IconUrl{
     $index = $url.LastIndexOf('/')
     if ($index -gt 0) {
       $fileName = $url.Substring($index + 1)
-      $index = $fileName.IndexOf('.')
+      $index = $fileName.LastIndexOf('.')
       if ($index -gt 0) {
         $fileName = $fileName.Substring(0, $index)
         $possibleNames += @($fileName)
@@ -298,7 +321,7 @@ function Update-IconUrl{
 
     foreach ($extension in $validExtensions) {
       $iconNameWithExtension = "$possibleName.$extension";
-      $commitHash = Test-Icon -Name $possibleName -Extension $extension -IconDir $IconDir -Optimize $Optimize;
+      $commitHash = Test-Icon -Name $possibleName -Extension $extension -IconDir $IconDir -Optimize $Optimize -PackageName $Name;
       if ($commitHash) { break; }
     }
     if ($commitHash) { break; }
@@ -339,7 +362,7 @@ else {
 
 if ($UseStopwatch) {
   $stopWatch.Stop();
-  if (!Quiet) {
+  if (!$Quiet) {
     Write-Host "Time Used: $($stopWatch.Elapsed)"
   }
 }

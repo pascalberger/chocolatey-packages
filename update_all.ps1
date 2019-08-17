@@ -8,7 +8,7 @@ $Options = [ordered]@{
     WhatIf        = $au_WhatIf                              #Whatif all packages
     Force         = $false                                  #Force all packages
     Timeout       = 100                                     #Connection timeout in seconds
-    UpdateTimeout = 1200                                    #Update timeout in seconds
+    UpdateTimeout = 3600                                    #Update timeout in seconds
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll       = $true                                   #Allow to push multiple packages at once
@@ -71,6 +71,10 @@ $Options = [ordered]@{
       ReleaseType = 'package'
     }
 
+    Gitter = @{
+        WebHookUrl = $env:gitter_webhook
+    }
+
     RunInfo = @{
         Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
         Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
@@ -92,15 +96,17 @@ $Options = [ordered]@{
 
     ForcedPackages = $ForcedPackages -split ' '
     UpdateIconScript = "$PSScriptRoot\scripts\Update-IconUrl.ps1"
+    UpdatePackageSourceScript = "$PSScriptRoot\scripts\Update-PackageSourceUrl.ps1"
     ModulePaths = @("$PSScriptRoot\scripts\au_extensions.psm1"; "Wormies-AU-Helpers")
     BeforeEach = {
         param($PackageName, $Options )
-        $Options.ModulePaths | % { Import-Module $_ }
-        . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet
+        $Options.ModulePaths | ForEach-Object { Import-Module $_ }
+        . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet -ThrowErrorOnIconNotFound
+        . $Options.UpdatePackageSourceScript $PackageName.ToLowerInvariant() -Quiet
         if (Test-Path tools) { Expand-Aliases -Directory tools }
 
         $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
-        $p = $Options.ForcedPackages | ? { $_ -match $pattern }
+        $p = $Options.ForcedPackages | Where-Object { $_ -match $pattern }
         if (!$p) { return }
 
         $global:au_Force   = $true
@@ -111,7 +117,11 @@ $Options = [ordered]@{
 
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root = $Root                                    #Path to the AU packages
-$global:info = updateall -Name $Name -Options $Options
+$global:info = Update-AuPackages -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-if ($global:info.error_count.total) { throw 'Errors during update' }
+if ($global:info.error_count.total) { 
+    WriteOutput "Update failed with message: $global:info.result.all" -type Error
+    throw 'Errors during update' 
+  }
+  
