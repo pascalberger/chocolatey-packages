@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-azurerepos</id>
-    <version>1.0.0</version>
+    <version>1.149.2</version>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/vscode-azurerepos</packageSourceUrl>
     <owners>pascalberger</owners>
     <title>Azure Repos Extension for Visual Studio Code</title>
@@ -17,7 +17,25 @@
     <bugTrackerUrl>https://github.com/Microsoft/azure-repos-vscode/issues</bugTrackerUrl>
     <tags>vscode visualstudiocode azuredevops azurerepos</tags>
     <summary>Visual Studio Code extension to connect to Azure Repos and work with Git and Team Foundation Version Control (TFVC) repositories. Manage your pull requests, work items, and more.</summary>
-    <description>Will be set on update</description>
+    <description><![CDATA[This Visual Studio Code extension allows you to connect to Azure DevOps Services and Team Foundation Server and provides support for Team Foundation Version Control (TFVC). It allows you to monitor your builds and manage your pull requests and work items for your TFVC or Git source repositories. The extension uses your local repository information to connect to either Azure DevOps Services or Team Foundation Server 2015 Update 2 (and later).
+
+## Features
+
+* Provide support for Team Foundation Version Control (TFVC)
+* Show information about repository in status bar
+* Add commands to work with Azure DevOps or Team Foundation Server
+
+## Notes
+
+* This package requires Visual Studio Code 1.2.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in any edition of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup
+  if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions how to disable auto-update.
+
+![screenshot](https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@4979562f4aff867f0f0690570e6bc0547bc10b4c/automatic/vscode-azurerepos/screenshot.png)
+]]></description>
     <releaseNotes>
 [Software Changelog](https://marketplace.visualstudio.com/items/ms-vsts.team/changelog)
     </releaseNotes>
