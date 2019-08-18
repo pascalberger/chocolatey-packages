@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-azurerepos</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/vscode-azurerepos</packageSourceUrl>
+    <owners>pascalberger</owners>
+    <title>Azure Repos Extension for Visual Studio Code</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://github.com/Microsoft/azure-repos-vscode.git</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@4979562f4aff867f0f0690570e6bc0547bc10b4c/icons/vscode-azurerepos.png</iconUrl>
+    <copyright>Copyright (c) Microsoft Corporation</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vsts.team/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Microsoft/azure-repos-vscode</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/azure-repos-vscode/issues</bugTrackerUrl>
+    <tags>vscode visualstudiocode azuredevops azurerepos</tags>
+    <summary>Visual Studio Code extension to connect to Azure Repos and work with Git and Team Foundation Version Control (TFVC) repositories. Manage your pull requests, work items, and more.</summary>
+    <description>Will be set on update</description>
+    <releaseNotes>
+[Software Changelog](https://marketplace.visualstudio.com/items/ms-vsts.team/changelog)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
