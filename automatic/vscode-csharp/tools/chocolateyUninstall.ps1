@@ -2,4 +2,4 @@ $ErrorActionPreference = 'Stop'
 
 Update-SessionEnvironment
 
-Uninstall-AzureDataStudioExtension -extensionId "ms-vscode.csharp"
+Uninstall-VsCodeExtension -extensionId "ms-vscode.csharp"
