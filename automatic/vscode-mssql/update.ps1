@@ -27,12 +27,12 @@ function global:au_GetLatest {
     #https://github.com/microsoft/vscode-mssql/releases/download/v1.5.0-alpha.14/mssql-1.6.0-win7-x86.vsix
     $re32  = "mssql-.+-win7-x86.vsix"
     $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href | ForEach-Object { $domain + $_ }
-    $version32 = $url -split '-' | Select-Object -Skip 2 -Last 1
+    $version32 = $url32 -split '-' | Select-Object -Skip 2 -Last 1
 
     #https://github.com/microsoft/vscode-mssql/releases/download/v1.5.0-alpha.14/mssql-1.6.0-win7-x64.vsix
     $re64  = "mssql-.+-win7-x64.vsix"
     $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href | ForEach-Object { $domain + $_ }
-    $version64 = $url -split '-' | Select-Object -Skip 2 -Last 1
+    $version64 = $url64 -split '-' | Select-Object -Skip 2 -Last 1
 
     if ($version32 -ne $version64) {  throw "Different versions for 32-Bit and 64-Bit detected." }
 
