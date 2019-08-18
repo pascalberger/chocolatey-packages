@@ -8,7 +8,7 @@
     <owners>pascalberger</owners>
     <title>Azure Repos Extension for Visual Studio Code</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://github.com/Microsoft/azure-repos-vscode.git</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vsts.team</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@4979562f4aff867f0f0690570e6bc0547bc10b4c/icons/vscode-azurerepos.png</iconUrl>
     <copyright>Copyright (c) Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vsts.team/license</licenseUrl>
