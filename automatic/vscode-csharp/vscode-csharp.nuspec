@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-csharp</id>
     <title>Visual Studio Code C# Extension</title>
-    <version>1.0.0.20181011</version>
+    <version>1.0.0</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp</projectUrl>
@@ -29,16 +29,21 @@ This extension provides the following features inside VS Code:
 
 ## Notes
 
-* The package always installs the latest version of the extension.
-  The version of the Chocolatey package reflects not the version of the extension.
+* This package requires Visual Studio Code 1.2.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in any edition of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup
+  if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions how to disable auto-update.
     </description>
     <tags>microsoft visualstudiocode vscode extension csharp omnisharp</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.csharp/changelog</releaseNotes>
     <dependencies>
-      <dependency id="vscode" version="1.2.0" />
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
