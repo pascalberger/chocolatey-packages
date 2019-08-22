@@ -3,20 +3,19 @@
   <metadata>
     <id>vscode-mssql</id>
     <title>Visual Studio Code Microsoft SQL Server Extension</title>
-    <version>1.0.0</version>
+    <version>1.6.0</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-mssql.git</projectSourceUrl>
-    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-mssql</packageSourceUrl>
+    <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/vscode-mssql</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@64880d5721c5a94734151c783f832c0b11151806/icons/vscode-mssql.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-mssql.mssql/license</licenseUrl>
     <docsUrl>https://github.com/Microsoft/vscode-mssql/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-mssql/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Develop Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere</summary>
-    <description>
-Welcome to **mssql** for Visual Studio Code! An extension for developing Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere with a rich set of functionalities.
+    <description><![CDATA[Welcome to **mssql** for Visual Studio Code! An extension for developing Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere with a rich set of functionalities.
 
 ## Features
 
@@ -35,7 +34,7 @@ Welcome to **mssql** for Visual Studio Code! An extension for developing Microso
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup
   if there's a newer version available on the marketplace.
   See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions how to disable auto-update.
-    </description>
+]]></description>
     <tags>microsoft visualstudiocode vscode extension mssql</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-mssql.mssql/changelog</releaseNotes>
     <dependencies>
