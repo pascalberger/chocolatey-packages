@@ -1,2 +1,2 @@
 Update-SessionEnvironment
-code --uninstall-extension PeterJausovec.vscode-docker
+code --uninstall-extension ms-azuretools.vscode-docker

@@ -1,2 +1,2 @@
 Update-SessionEnvironment
-code --install-extension PeterJausovec.vscode-docker
+code --install-extension ms-azuretools.vscode-docker

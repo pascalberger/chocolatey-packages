@@ -8,8 +8,9 @@ The Docker extension makes it easy to build, manage and deploy containerized app
 * Syntax highlighting, hover tips, IntelliSense (completions) for `docker-compose.yml` and `Dockerfile` files
 * Linting (errors and warnings) for `Dockerfile` files
 * Command Palette (`F1`) integration for the most common Docker commands (for example `docker build`, `docker push`, etc.)
-* Explorer integration for managing Images, running Containers, and Docker Hub registries
-* Deploy images from Docker Hub and Azure Container Registries directly to Azure App Service
+* Explorer integration for managing images, containers, registries, and more
+* Deploy images from a registry directly to Azure App Service
+* Debug .NET Core applications running in Linux Docker containers
 
 ## Notes
 

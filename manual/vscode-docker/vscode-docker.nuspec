@@ -3,15 +3,15 @@
   <metadata>
     <id>vscode-docker</id>
     <title>Visual Studio Code Docker Extension</title>
-    <version>1.0.0.20181011</version>
+    <version>1.0.0.20190907</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker</projectUrl>
     <projectSourceUrl>https://github.com/microsoft/vscode-docker</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/manual/vscode-docker</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@2486d672647c8d06684cd06c4a85255be7135bd9/icons/vscode-docker.png</iconUrl>
-    <licenseUrl>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/license</licenseUrl>
-    <docsUrl>https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker</docsUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-azuretools.vscode-docker/license</licenseUrl>
+    <docsUrl>https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker</docsUrl>
     <bugTrackerUrl>https://github.com/microsoft/vscode-docker/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Docker Support for Visual Studio Code</summary>
@@ -24,8 +24,9 @@ The Docker extension makes it easy to build, manage and deploy containerized app
 * Syntax highlighting, hover tips, IntelliSense (completions) for `docker-compose.yml` and `Dockerfile` files
 * Linting (errors and warnings) for `Dockerfile` files
 * Command Palette (`F1`) integration for the most common Docker commands (for example `docker build`, `docker push`, etc.)
-* Explorer integration for managing Images, running Containers, and Docker Hub registries
-* Deploy images from Docker Hub and Azure Container Registries directly to Azure App Service
+* Explorer integration for managing images, containers, registries, and more
+* Deploy images from a registry directly to Azure App Service
+* Debug .NET Core applications running in Linux Docker containers
 
 ## Notes
 
