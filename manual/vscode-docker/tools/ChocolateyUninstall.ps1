@@ -1,2 +1,5 @@
+$ErrorActionPreference = 'Stop'
+
 Update-SessionEnvironment
-code --uninstall-extension ms-azuretools.vscode-docker
+
+Uninstall-VsCodeExtension -extensionId "ms-azuretools.vscode-docker"

@@ -14,5 +14,8 @@ The Docker extension makes it easy to build, manage and deploy containerized app
 
 ## Notes
 
+* This package requires Visual Studio Code 1.2.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in any edition of Visual Studio Code which can be found.
 * The package always installs the latest version of the extension.
-  The version of the Chocolatey package reflects not the version of the extension.
+  The version of the Chocolatey package does not reflect the version of the extension.
