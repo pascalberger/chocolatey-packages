@@ -37,7 +37,7 @@ The Docker extension makes it easy to build, manage and deploy containerized app
   The version of the Chocolatey package does not reflect the version of the extension.
     </description>
     <tags>microsoft visualstudiocode vscode extension docker</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items/PeterJausovec.vscode-docker/changelog</releaseNotes>
+    <releaseNotes>https://marketplace.visualstudio.com/items/ms-azuretools.vscode-docker/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
