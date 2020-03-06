@@ -6,11 +6,11 @@
     <version>1.21.13</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp</projectUrl>
     <projectSourceUrl>https://github.com/OmniSharp/omnisharp-vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/pascalberger/chocolatey-packages/tree/master/automatic/vscode-csharp</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@2ef70f9db2ed3b0e16235c9f89a2ce5d43360951/icons/vscode-csharp.png</iconUrl>
-    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.csharp/license</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-dotnettools.csharp/license</licenseUrl>
     <docsUrl>https://code.visualstudio.com/docs/languages/csharp</docsUrl>
     <bugTrackerUrl>https://github.com/OmniSharp/omnisharp-vscode/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -36,7 +36,7 @@ This extension provides the following features inside VS Code:
   See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions how to disable auto-update.
 ]]></description>
     <tags>microsoft visualstudiocode vscode extension csharp omnisharp</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.csharp/changelog</releaseNotes>
+    <releaseNotes>https://marketplace.visualstudio.com/items/ms-dotnettools.csharp/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
