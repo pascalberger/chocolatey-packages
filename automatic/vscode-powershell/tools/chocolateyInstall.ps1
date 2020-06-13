@@ -3,7 +3,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $extensionName = "PowerShell-"
-$extensionVersion = "2020.3.0"
+$extensionVersion = "2020.6.0"
 $extensionId = "$toolsDir\$extensionName$extensionVersion.vsix"
 
 Update-SessionEnvironment
