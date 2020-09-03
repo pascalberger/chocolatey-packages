@@ -4,12 +4,12 @@ in verifying that this package's contents are trustworthy.
 
 The extension has been downloaded from GitHub and can be verified like this:
 
-1. Download the following extension: <https://github.com/OmniSharp/omnisharp-vscode/releases/download/v1.23.1/csharp-1.23.1.vsix>
+1. Download the following extension: <https://github.com/OmniSharp/omnisharp-vscode/releases/download/v1.23.2/csharp-1.23.2.vsix>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: 99D469BF79FD0EF536123D7DECF8B89791EF9392B005C8E780A62339F36BD125
+  checksum: 59A9AB9E6C19E01A9B5F49ACF457E5D8E443172F5F45BC40912B3427918FAA79
 
 File 'LICENSE.txt' is obtained from <https://github.com/OmniSharp/omnisharp-vscode/blob/310b3d68898c9fcaa4b3bed09a1613708467529c/LICENSE.txt>
