@@ -3,7 +3,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $extensionName = "csharp-"
-$extensionVersion = "1.23.5"
+$extensionVersion = "1.23.6"
 $extensionId = "$toolsDir\$extensionName$extensionVersion.vsix"
 
 Update-SessionEnvironment
