@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-csharp</id>
     <title>Visual Studio Code C# Extension</title>
-    <version>1.23.12</version>
+    <version>1.23.13</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp</projectUrl>
