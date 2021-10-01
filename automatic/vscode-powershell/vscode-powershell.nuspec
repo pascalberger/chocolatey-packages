@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-powershell</id>
     <title>Visual Studio Code PowerShell Extension</title>
-    <version>2021.9.0</version>
+    <version>2021.9.2</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell</projectUrl>
