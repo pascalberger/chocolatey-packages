@@ -3,7 +3,7 @@
   <metadata>
     <id>azuredatastudio-powershell</id>
     <title>Azure Data Studio PowerShell Extension</title>
-    <version>2021.10.0</version>
+    <version>2021.10.1</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://docs.microsoft.com/en-us/sql/azure-data-studio/powershell-extension</projectUrl>
