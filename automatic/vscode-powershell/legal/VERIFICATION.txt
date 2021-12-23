@@ -4,12 +4,12 @@ in verifying that this package's contents are trustworthy.
 
 The extension has been downloaded from GitHub and can be verified like this:
 
-1. Download the following extension: <https://github.com/PowerShell/vscode-powershell/releases/download/v2021.10.2/powershell-2021.10.2.vsix>
+1. Download the following extension: <https://github.com/PowerShell/vscode-powershell/releases/download/v2021.12.0/powershell-2021.12.0.vsix>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: A85317BE4E6FF8EEB608A4FBB461A19C8E815F9DA8A67940D36DA55F25D3FB3B
+  checksum: 40AB45C499F9CDED136EC2DD40A43B7388BABBAE0FCE49913AA85D7F6B8B1AFA
 
 File 'LICENSE.txt' is obtained from <https://github.com/PowerShell/vscode-powershell/blob/adca2cdd4aad34cd31ec550b4e5910686d500082/LICENSE.txt>
