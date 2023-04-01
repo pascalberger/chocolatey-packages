@@ -22,7 +22,6 @@ if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
 $options = [ordered]@{
     Force   = $true
     Push    = $false
-    UpdateTimeout = 3600                               #Update timeout in seconds
     Threads = 10
 
     IgnoreOn = @(                                      #Error message parts to set the package ignore status
@@ -44,44 +43,31 @@ $options = [ordered]@{
         'Internal Server Error'
         'An exception occurred during a WebClient request'
         'Job returned no object, Vector smash ?'
-        'remote session failed with an unexpected state'
     )
     RepeatSleep   = 60                                      #How much to sleep between repeats in seconds, by default 0
     RepeatCount   = 2                                       #How many times to repeat on errors, by default 1
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-Force-Test-${n}.md"      #Path where to save the report
+        Path = "$PSScriptRoot\Update-Force-Test-${n}.md"    #Path where to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $true                             #  Markdown: do not show AppVeyor build shield
             Title       = "Update Force Test - Group ${n}"
-            UserMessage = "[Ignored](#ignored) | [Update report](https://gist.github.com/$Env:gist_id) | [Build](https://ci.appveyor.com/project/pascalberger/chocolatey-packages) | **USING AU NEXT VERSION**"       #  Markdown, Text: Custom user message to show
+            UserMessage = "[Ignored](#ignored) | [Update report](https://gist.github.com/$Env:gist_id)"       #  Markdown, Text: Custom user message to show
         }
     }
 
     Gist = @{
         Id     = $Env:gist_id_test                          #Your gist id; leave empty for new private or anonymous gist
         ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-Force-Test-${n}.md"       #List of files to add to the gist
+        Path   = "$PSScriptRoot\Update-Force-Test-${n}.md"  #List of files to add to the gist
         Description = "Update Force Test Report #powershell #chocolatey"
     }
-
-    ModulePaths = @("$PSScriptRoot\scripts\au_extensions.psm1"; "Wormies-AU-Helpers")
-
-    BeforeEach  = {
-      param($PackageName, $Options )
-      $Options.ModulePaths | ForEach-Object { Import-Module $_ }
-      $global:au_Force = $true # Some of the helper scripts rely on this one
-  }
 }
 
-[System.Net.ServicePointManager]::SecurityProtocol = 3072 -bor
-  768 -bor
-  [System.Net.SecurityProtocolType]::Tls -bor
-  [System.Net.SecurityProtocolType]::Ssl3
 
-$global:info = Update-AuPackages -Name $Name -Options $Options
+$global:info = updateall -Name $Name -Options $Options
 
 $au_errors = $global:info | Where-Object { $_.Error } | Select-Object -ExpandProperty Error
 

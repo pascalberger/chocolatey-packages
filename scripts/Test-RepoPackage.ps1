@@ -1,10 +1,10 @@
-﻿<#
+<#
 .SYNOPSIS
-  Test the au updating of changed packages, as well as the install and uninstall of those packages.
+  Test the AU updating of changed packages, as well as the install and uninstall of those packages.
 
 .DESCRIPTION
-  This script uses git to get all the packages that have changed since it diverged from the
-  master branch and runs those packages through au updating (only if they are automatic packages),
+  This script uses Git to get all the packages that have changed since it diverged from the
+  master branch and runs those packages through AU updating (only if they are automatic packages),
   tries to install them and also tries to uninstall those packages.
   It also accepts an optional packageName that overrides the check for changed packages.
 
@@ -20,7 +20,7 @@
 
 .PARAMETER CleanFiles
   If this variable have been specified the script will clean all
-  chocolatey logs, au output files and the nupkg files already existing
+  Chocolatey logs, AU output files and the nupkg files already existing
   in the repository before running the tests.
 
 .PARAMETER TakeScreenshots
@@ -69,7 +69,7 @@ function CheckPackageSizes() {
     if ($size -gt $maxSize) {
       $friendlySize = $size / 1024 / 1024
       WriteOutput -type Error "The package $packageName is too large. Maximum allowed size is $($maxSize / 1024 / 1024) MB. Actual size was $friendlySize MB!"
-      SetAppveyorExitCode -ExitCode 2
+      SetBuildServerExitCode -ExitCode 2
     } else {
       $index = 0
       $suffix = @('Bytes';'KB';'MB')
@@ -88,7 +88,7 @@ function CreateSnapshotArchive() {
 
   if (!(Test-Path $artifactsDirectory)) { mkdir $artifactsDirectory }
   $directories = $packages | Where-Object {
-    Test-path "$env:ChocolateyInstall\.chocolatey\$($_.Name)*"
+    Test-Path "$env:ChocolateyInstall\.chocolatey\$($_.Name)*"
   } | ForEach-Object {
     $directory = Resolve-Path "$env:ChocolateyInstall\.chocolatey\$($_.Name)*" | Select-Object -last 1
     "`"$directory`""
@@ -98,7 +98,7 @@ function CreateSnapshotArchive() {
     'a'
     '-mx9'
     "`"$artifactsDirectory\install_snapshot.7z`""
-  ) + ($directories | Select-Object -Unique)
+    ) + ($directories | Select-Object -Unique)
 
   . 7z $arguments
 }
@@ -295,8 +295,8 @@ function RemoveDependentPackages() {
     [object]$packages
   )
 
-  [array]$dependentPackages = $packages | Where-Object { $_.DependentPackage -ne $null -and $_.DependentPackage -ne '' } | Select-Object -expand DependentPackage
-  if ($dependentPackages -ne $null -and $dependentPackages.Count -gt 0) {
+  [array]$dependentPackages = $packages | Where-Object { $null -ne $_.DependentPackage -and $_.DependentPackage -ne '' } | Select-Object -expand DependentPackage
+  if ($null -ne $dependentPackages  -and $dependentPackages.Count -gt 0) {
     $packages = $packages | Where-Object { !$dependentPackages.Contains($_.Name) }
   }
   return $packages
@@ -316,10 +316,10 @@ function RunChocoPackProcess() {
   if ($path -ne $null -and $path -ne '') { Pop-Location}
 }
 
-function SetAppveyorExitCode() {
+function SetBuildServerExitCode() {
 <#
 .SYNOPSIS
-  Sets the exit code of the script when running on appveyor, so
+  Sets the exit code of the script when running on build server, so
   the build would fail when necessary.
 #>
   param(
@@ -331,7 +331,7 @@ function SetAppveyorExitCode() {
     return
   }
 
-  if ((Test-Path env:\APPVEYOR)) {
+  if ((Test-Path env:\GITHUB_ACTIONS)) {
     $host.SetShouldExit($ExitCode)
   }
 
@@ -368,7 +368,7 @@ function RunChocoProcess() {
       '--autouninstaller'
       '--fail-on-autouninstaller'
       #'--force'
-      )
+    )
   }
   $packFailed = $false
   $errorFilePath = "$screenShotDir\$($arguments[0])Error_$($arguments[1]).jpg"
@@ -376,7 +376,6 @@ function RunChocoProcess() {
 
   $packageName = $arguments[1] -split ' ' | Select-Object -first 1
   $pkgDir = Get-ChildItem -Path "$PSScriptRoot\.." -Filter "$packageName" -Recurse -Directory | Select-Object -first 1
-
   $nupkgFile = Get-ChildItem -Path $pkgDir.FullName -Filter "*.nupkg" | Select-Object -first 1
   $pkgNameVersion = Split-Path -Leaf $nupkgFile | ForEach-Object { ($_ -replace '((\.\d+)+(-[^-\.]+)?).nupkg', ':$1').Replace(':.', ':') -split ':' }
   $packageName = $pkgNameVersion | Select-Object -first 1
@@ -384,9 +383,8 @@ function RunChocoProcess() {
   if ($packageName -ne $arguments[1]) { $args[1] = $packageName }
 
   try {
-      RunChocoPackProcess '' | WriteChocoOutput
-  
-      if ($arguments[0] -eq 'install') {
+    RunChocoPackProcess '' | WriteChocoOutput
+    if ($arguments[0] -eq 'install') {
       if ($version) {
         $args += @("--version=$($version)")
         if ($version -match '\-') {
@@ -431,7 +429,7 @@ function RunChocoProcess() {
     }
   } finally {
     if ($LastExitCode -ne 0) {
-      SetAppveyorExitCode $LastExitCode
+      SetBuildServerExitCode $LastExitCode
       $res = $false
     }
     if ($takeScreenshot -and !$packFailed) {
@@ -497,13 +495,13 @@ function InstallPackage() {
 function TestAuUpdatePackages() {
 <#
 .SYNOPSIS
-  Function responsible for running au on the specified packages.
+  Function responsible for running AU on the specified packages.
 #>
   param(
     $packages
   )
   [array]$packageNames = $packages | Where-Object IsAutomatic | Select-Object -expand Name
-  $packageNames += $packages | Where-Object { $_.DependentPackage -ne $null -and $_.DependentPackage -ne '' } | Select-Object -expand DependentPackage
+  $packageNames += $packages | Where-Object { $null -ne $_.DependentPackage -and $_.DependentPackage -ne '' } | Select-Object -expand DependentPackage
   if (!$packageNames) {
     WriteOutput "No Automatic packages was found. Skipping AU update test."
     return
@@ -513,7 +511,7 @@ function TestAuUpdatePackages() {
     Push-Location "$PSScriptRoot\.."
     .\test_all.ps1 -Name $packageNames -ThrowOnErrors
   } catch {
-    SetAppveyorExitCode $LastExitCode
+    SetBuildServerExitCode $LastExitCode
     throw "An exception ocurred during AU update. Cancelling all other checks."
   } finally {
     MoveLogFile -packageName 'au' -commandType 'update'
@@ -539,7 +537,7 @@ function RunUpdateScripts {
       Push-Location $_.Directory
       .\update.ps1
     } catch {
-      SetAppveyorExitCode 1
+      SetBuildServerExitCode 1
       throw "An exception ocurred during the manual update of $name. Cancelling all other checks."
     } finally {
       Pop-Location
