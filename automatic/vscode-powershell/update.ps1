@@ -1,9 +1,11 @@
 import-module au
+import-module PowerShellForGitHub
 
-$domain = 'https://github.com'
-$releases = "$domain/PowerShell/vscode-powershell/releases/latest"
+$repoOwner = 'PowerShell'
+$repoName = 'vscode-powershell'
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix -FileNameBase $Latest.FileName }
+
 function global:au_SearchReplace {
     @{
         ".\legal\verification.txt" = @{
@@ -19,17 +21,21 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-    #https://github.com/PowerShell/vscode-powershell/releases/download/v2019.5.0/PowerShell-2019.5.0.vsix
-    $re  = "PowerShell-.+.vsix"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href | ForEach-Object { $domain + $_ }
-    $file = $url -split '-' | Select-Object -Last 1
-    $version = [IO.Path]::GetFileNameWithoutExtension($file)
-
+    $release = Get-GitHubRelease -OwnerName $repoOwner -RepositoryName $repoName -Latest
+    $version = $release.tag_name
+    if ($version.StartsWith('v')) {
+      $version = $version.Substring(1)
+    }
+    
+    # https://github.com/PowerShell/vscode-powershell/releases/download/v2019.5.0/PowerShell-2019.5.0.vsix
+    $asset = Get-GitHubReleaseAsset -OwnerName $repoOwner -RepositoryName $repoName -ReleaseId $release.id | Where-Object name -match 'PowerShell-.*.vsix'
+    $url = $asset.browser_download_url
+  
     @{
-        Version = $version
-        URL32   = $url
+      Version   = $version
+      URL32     = $url
+      Filename  = "PowerShell-${version}"
+      FileType  = 'vsix'
     }
 }
 
