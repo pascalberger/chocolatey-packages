@@ -2,7 +2,7 @@ name: Test
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   test:
@@ -54,7 +54,7 @@ jobs:
         shell: powershell
         run: |
           Set-Service wuauserv -StartupType Manual
-          git fetch origin main:refs/remotes/origin/main
+          git fetch origin master:refs/remotes/origin/master
           .\scripts\Test-RepoPackage.ps1 -CleanFiles -TakeScreenshots -artifactsDirectory ${{ env.RUNNER_TEMP }}\artifacts
         env:
           github_api_key: ${{ secrets.GITHUBREPO_API_KEY }}
