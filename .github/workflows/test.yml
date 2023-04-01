@@ -1,0 +1,66 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test packages
+    runs-on: windows-2022
+    env:
+      # AU version to use or empty to use the latest. Specify branch name to use development version from GitHub
+      AU_VERSION:
+      # Use 1 to test all, or N to split testing into N groups
+      AU_TEST_GROUPS: 1
+      # Repository containing packages
+      GITHUB_USER_REPO: pascalberger/chocolatey-packages
+      # Gist ID for test results
+      GIST_ID_TEST:
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3.5.0
+        with:
+          fetch-depth: 0 # Determination of changed packages requires complete log
+      # Defines Git settings used for updating packages
+      - name: Initialize Git environment
+        shell: powershell
+        run: |
+          git config --global user.email "pascal.berger@gmail.com"
+          git config --global user.name "Pascal Berger"
+          git config --global core.safecrlf false
+      # Show information about available environment
+      - name: Show environment information
+        shell: powershell
+        run: |
+          Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | Format-List Caption, OSArchitecture, Version
+          $PSVersionTable
+          git --version
+          choco --version
+      # Make Chocolatey Automatic Package Updater Module available
+      - name: Clone AU
+        shell: powershell
+        run: |
+          git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+          . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:AU_VERSION
+      # Install required modules
+      - name: Install required modules
+        shell: powershell
+        run: |
+          Install-Module PowerShellForGitHub -Force
+      # Test packages
+      - name: Test packages
+        continue-on-error: true
+        shell: powershell
+        run: |
+          Set-Service wuauserv -StartupType Manual
+          git fetch origin main:refs/remotes/origin/main
+          .\scripts\Test-RepoPackage.ps1 -CleanFiles -TakeScreenshots -artifactsDirectory ${{ env.RUNNER_TEMP }}\artifacts
+        env:
+          github_api_key: ${{ secrets.GITHUBREPO_API_KEY }}
+      - name: Publish install_snapshot.7z
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+        continue-on-error: true
+        with:
+          name: install_snapshot.7z
+          path: ${{ env.RUNNER_TEMP }}\artifacts\install_snapshot.7z
