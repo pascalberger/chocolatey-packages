@@ -1,0 +1,113 @@
+name: Update
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # Enable manual trigger
+    inputs:
+      forced_packages:
+        description: The list of packages to forcibly update (pkg1:ver1 pkg2 ... pkgN)
+        required: false
+  schedule:
+    - cron: "5 */8 * * *" # Run 06:05, 12:05, and 18:05
+
+jobs:
+  update:
+    name: Check for updates
+    runs-on: windows-2022
+    timeout-minutes: 350 # Run just before next scheduled run
+    concurrency: package_update
+    env:
+      # AU version to use or empty to use the latest. Specify branch name to use development version from GitHub
+      AU_VERSION: 
+      AU_PUSH: true
+      # Repository containing packages
+      GITHUB_USER_REPO: pascalberger/chocolatey-packages
+      # ID of the gist used to save run results
+      GIST_ID: 95bd06a2adf814823623f01cf4a7f871
+    steps:      
+      - name: Checkout repository
+        uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3.5.0
+        with:
+          fetch-depth: 0 # History plugin requires complete log
+          token: ${{ secrets.GITHUBREPO_API_KEY }} # Use a token from swissgrc-bot user, since it has permission to bypass branch protection policy
+      # Defines Git settings used for updating packages
+      - name: Initialize Git environment
+        shell: powershell
+        run: |
+          git config --global user.email "pascal.berger@gmail.com"
+          git config --global user.name "Pascal Berger"
+          git config --global core.safecrlf false
+      # Show information about available environment
+      - name: Show environment information
+        shell: powershell
+        run: |
+          Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | Format-List Caption, OSArchitecture, Version
+          $PSVersionTable
+          git --version
+          choco --version
+      # Make Chocolatey Automatic Package Updater Module available
+      - name: Clone AU
+        shell: powershell
+        run: |
+          git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+          . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:AU_VERSION
+      # Install required modules
+      - name: Install required modules
+        shell: powershell
+        run: |
+          Install-Module PowerShellForGitHub -Force
+      # Update packages
+      - name: Run update
+        continue-on-error: true
+        shell: powershell
+        run: |
+          if ( '${{ github.event_name }}' -eq 'push' )
+          {
+            switch -regex ('${{ github.event.head_commit.message }}')
+            {
+              '\[AU (.+?)\]' { 
+                Write-Host "AU command found"
+                $forced = $Matches[1] 
+              }
+            }
+          }
+          elseif ( '${{ github.event_name }}' -eq 'workflow_dispatch' )
+          {
+            $forced = '${{ github.event.inputs.forced_packages }}'
+          }
+
+          .\update_all.ps1 -ForcedPackages $forced
+        env:
+          api_key: ${{ secrets.CHOCOLATEY_API_KEY }}
+          github_api_key: ${{ secrets.GITHUBREPO_API_KEY }}
+      # Collect and publish build artifacts
+      - name: Collecting build artifacts
+        continue-on-error: true
+        shell: powershell
+        run: |
+          if (Test-Path $Env:TEMP\chocolatey\au) { 7z a  -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
+      - name: Publish au_temp.7z
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+        continue-on-error: true
+        with:
+          name: au_temp.7z
+          path: au_temp.7z
+      - name: Publish update_info.xml
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+        continue-on-error: true
+        with:
+          name: update_info.xml
+          path: update_info.xml
+      - name: Publish Update-AUPackages.md
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+        continue-on-error: true
+        with:
+          name: Update-AUPackages.md
+          path: Update-AUPackages.md
+      - name: Publish Update-History.md
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+        continue-on-error: true
+        with:
+          name: Update-History.md
+          path: Update-History.md
