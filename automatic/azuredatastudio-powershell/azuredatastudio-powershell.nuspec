@@ -3,7 +3,7 @@
   <metadata>
     <id>azuredatastudio-powershell</id>
     <title>Azure Data Studio PowerShell Extension</title>
-    <version>2022.8.5</version>
+    <version>2023.3.3</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://docs.microsoft.com/en-us/sql/azure-data-studio/powershell-extension</projectUrl>
@@ -15,7 +15,7 @@
     <bugTrackerUrl>https://github.com/PowerShell/vscode-powershell/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>PowerShell Editor Support for Azure Data Studio</summary>
-    <description><![CDATA[This extension provides rich PowerShell editor support in [Azure Data Studio](https://github.com/Microsoft/azuredatastudio).
+    <description><![CDATA[This extension provides rich PowerShell language support for [Azure Data Studio](https://github.com/Microsoft/azuredatastudio).
 Now you can write and debug PowerShell scripts using the excellent IDE-like interface that Azure Data Studio provides.
 
 ## Features
@@ -29,7 +29,9 @@ Now you can write and debug PowerShell scripts using the excellent IDE-like inte
 * Document and workspace symbol discovery
 * Run selected selection of PowerShell code using `F8`
 * Launch online help for the symbol under the cursor using `Ctrl`+`F1`
-* Basic interactive console support!
+* Local script debugging
+* Extension Terminal support
+* PowerShell ISE color theme
 
 ## Notes
 
