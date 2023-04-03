@@ -1,6 +1,6 @@
 # <img src="https://cdn.jsdelivr.net/gh/pascalberger/chocolatey-packages@baa661297ee231fe4a7f24089c594499babffd12/icons/azuredatastudio-powershell.png" width="48" height="48"/> [azuredatastudio-powershell](https://chocolatey.org/packages/azuredatastudio-powershell)
 
-This extension provides rich PowerShell editor support in [Azure Data Studio](https://github.com/Microsoft/azuredatastudio).
+This extension provides rich PowerShell language support for [Azure Data Studio](https://github.com/Microsoft/azuredatastudio).
 Now you can write and debug PowerShell scripts using the excellent IDE-like interface that Azure Data Studio provides.
 
 ## Features
@@ -14,7 +14,9 @@ Now you can write and debug PowerShell scripts using the excellent IDE-like inte
 * Document and workspace symbol discovery
 * Run selected selection of PowerShell code using `F8`
 * Launch online help for the symbol under the cursor using `Ctrl`+`F1`
-* Basic interactive console support!
+* Local script debugging
+* Extension Terminal support
+* PowerShell ISE color theme
 
 ## Notes
 
