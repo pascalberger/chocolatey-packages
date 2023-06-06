@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-mssql</id>
     <title>Visual Studio Code Microsoft SQL Server Extension</title>
-    <version>1.19.0</version>
+    <version>1.19.1</version>
     <authors>Microsoft</authors>
     <owners>Pascal Berger</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql</projectUrl>
