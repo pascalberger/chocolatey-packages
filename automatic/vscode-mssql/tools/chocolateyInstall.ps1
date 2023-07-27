@@ -3,7 +3,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $extensionName = "mssql-"
-$extensionVersion = "1.19.1"
+$extensionVersion = "1.20.0"
 $osBitness = Get-OSArchitectureWidth
 $extensionId = "$toolsDir\$extensionName$extensionVersion-win7-x$osBitness.vsix"
 
