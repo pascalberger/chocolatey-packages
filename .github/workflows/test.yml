@@ -59,7 +59,7 @@ jobs:
         env:
           github_api_key: ${{ secrets.GITHUBREPO_API_KEY }}
       - name: Publish install_snapshot.7z
-        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         continue-on-error: true
         with:
           name: install_snapshot.7z
