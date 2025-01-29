@@ -9,12 +9,9 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 function global:au_SearchReplace {
     @{
         ".\legal\verification.txt" = @{
-            "(?i)(32-Bit.+)\<.*\>" = "`${1}<$($Latest.URL32)>"
-            "(?i)(64-Bit.+)\<.*\>" = "`${1}<$($Latest.URL64)>"
-            "(?i)(checksum type 32-bit:\s+).*" = "`${1}$($Latest.ChecksumType32)"
-            "(?i)(checksum 32-bit:\s+).*" = "`${1}$($Latest.Checksum32)"
-            "(?i)(checksum type 64-bit:\s+).*" = "`${1}$($Latest.ChecksumType64)"
-            "(?i)(checksum 64-bit:\s+).*" = "`${1}$($Latest.Checksum64)"
+            "(?i)(Download the following extension:.+)\<.*\>" = "`${1}<$($Latest.URL64)>"
+            "(?i)(checksum type:\s+).*" = "`${1}$($Latest.ChecksumType64)"
+            "(?i)(checksum:\s+).*" = "`${1}$($Latest.Checksum64)"
         }
         
         ".\tools\chocolateyInstall.ps1" = @{
@@ -32,17 +29,12 @@ function global:au_GetLatest {
 
     $assets = Get-GitHubReleaseAsset -OwnerName $repoOwner -RepositoryName $repoName -ReleaseId $release.id
     
-    # https://github.com/microsoft/vscode-mssql/releases/download/v1.18.0/mssql-1.18.0-win-x86.vsix
-    $asset32 = $assets | Where-Object name -match 'mssql-.*-win-x86.vsix'
-    $url32 = $asset32.browser_download_url
-
-    # https://github.com/microsoft/vscode-mssql/releases/download/v1.18.0/mssql-1.18.0-win-x64.vsix
-    $asset64 = $assets | Where-Object name -match 'mssql-.*-win-x64.vsix'
+    # https://github.com/microsoft/vscode-mssql/releases/download/v1.27.0/mssql-1.27.0.vsix
+    $asset64 = $assets | Where-Object name -match 'mssql-.*.vsix'
     $url64 = $asset64.browser_download_url
 
     @{
       Version   = $version
-      URL32     = $url32
       URL64     = $url64
       FileType  = 'vsix'
     }
