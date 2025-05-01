@@ -5,15 +5,15 @@ in verifying that this package's contents are trustworthy.
 The extension has been downloaded from GitHub and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/microsoft/vscode-mssql/releases/download/v1.30.0/mssql-1.30.0-win-x86.vsix>
-  64-Bit: <https://github.com/microsoft/vscode-mssql/releases/download/v1.30.0/mssql-1.30.0-win-x64.vsix>
+  32-Bit: <https://github.com/microsoft/vscode-mssql/releases/download/v1.31.0/mssql-1.31.0-win-x86.vsix>
+  64-Bit: <https://github.com/microsoft/vscode-mssql/releases/download/v1.31.0/mssql-1.31.0-win-x64.vsix>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type 32-bit: sha256
-  checksum 32-bit: D12BF1767ED8DF1863CDB462FE8FC6AD6C3AD66BC17AD701C772EBA98A552C1F
+  checksum 32-bit: E431524E311B20F5E22318454839C26D7E52780F90BCED56E4402EC4372E5324
   checksum type 64-bit: sha256
-  checksum 64-bit: 5986ADFF7F3F7A363092DC92D7F9F026B478CC006C9CE67D30F2B586DAEDB240
+  checksum 64-bit: 3DA5DC63BDB9AFCDBD23105190A6D516069214AFA2B9800791B2FBE9A21F29FA
 
 File 'LICENSE.txt' is obtained from <https://github.com/microsoft/vscode-mssql/blob/610c7f88b384481b372e90fcfb731bbe7c78aca1/LICENSE.txt>
