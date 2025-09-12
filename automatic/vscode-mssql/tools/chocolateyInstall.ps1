@@ -5,7 +5,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $extensionName = "mssql-"
 $extensionVersion = "1.36.0"
 $osBitness = Get-OSArchitectureWidth
-$extensionId = "$toolsDir\$extensionName$extensionVersion-win7-x$osBitness.vsix"
+$extensionId = "$toolsDir\$extensionName$extensionVersion-win-x$osBitness.vsix"
 
 Update-SessionEnvironment
 
