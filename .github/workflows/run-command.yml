@@ -47,6 +47,11 @@ jobs:
         run: |
           git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:AU_VERSION
+      # Install required modules
+      - name: Install required modules
+        shell: powershell
+        run: |
+          Install-Module PowerShellForGitHub -Force
       # Run specific commands which can be defined in commit messages
       - name: Run commands
         shell: powershell
