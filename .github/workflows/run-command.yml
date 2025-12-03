@@ -11,7 +11,7 @@ on:
 jobs:
   run-command:
     name: Run Command
-    runs-on: windows-2022
+    runs-on: windows-2025
     concurrency: package_update
     env:
       # AU version to use or empty to use the latest. Specify branch name to use development version from GitHub
